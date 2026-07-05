@@ -1,0 +1,101 @@
+.schedule{
+
+    padding:120px 20px;
+
+    background:#05070D;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:rgba(139,92,246,.12);
+
+    color:#8B5CF6;
+
+    margin-bottom:25px;
+
+}
+
+.container h2{
+
+    font-size:clamp(2rem,5vw,3.5rem);
+
+    margin-bottom:20px;
+
+}
+
+.container p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-text-soft);
+
+}
+
+.timeline{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.card{
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.day{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:var(--gradient-primary);
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}

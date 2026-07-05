@@ -1,0 +1,103 @@
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:22px;
+
+    flex-wrap:wrap;
+
+    margin-top:50px;
+
+}
+
+.item{
+
+    width:110px;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:.35s;
+
+}
+
+.item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(0,229,255,.35);
+
+    box-shadow:
+
+        0 0 20px rgba(0,229,255,.15);
+
+}
+
+.number{
+
+    display:block;
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:var(--color-primary);
+
+    line-height:1;
+
+}
+
+.label{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:var(--color-text-soft);
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+@media(max-width:768px){
+
+    .countdown{
+
+        gap:14px;
+
+    }
+
+    .item{
+
+        width:85px;
+
+        padding:16px;
+
+    }
+
+    .number{
+
+        font-size:1.8rem;
+
+    }
+
+    .label{
+
+        font-size:.7rem;
+
+    }
+
+}

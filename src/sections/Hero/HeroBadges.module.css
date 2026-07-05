@@ -1,0 +1,49 @@
+.badges{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:40px;
+
+}
+
+.badge{
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.badge:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--color-primary);
+
+    color:var(--color-primary);
+
+    box-shadow:
+
+        0 0 20px rgba(0,229,255,.18);
+
+}

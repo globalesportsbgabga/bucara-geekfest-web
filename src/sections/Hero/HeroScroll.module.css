@@ -1,0 +1,101 @@
+.scroll{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:70px;
+
+    gap:14px;
+
+    color:var(--color-text-soft);
+
+    animation:fadeIn 2s ease;
+
+}
+
+.mouse{
+
+    width:32px;
+
+    height:54px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:8px;
+
+}
+
+.wheel{
+
+    width:4px;
+
+    height:10px;
+
+    border-radius:999px;
+
+    background:var(--color-primary);
+
+    animation:scrollWheel 1.6s infinite;
+
+}
+
+.scroll p{
+
+    font-size:.85rem;
+
+    letter-spacing:1px;
+
+}
+
+@keyframes scrollWheel{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+
+    }
+
+    40%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}

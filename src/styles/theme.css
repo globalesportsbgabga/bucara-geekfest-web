@@ -1,0 +1,25 @@
+:root{
+
+    --color-background:#05070D;
+
+    --color-surface:#070B14;
+
+    --color-primary:#00E5FF;
+
+    --color-secondary:#8B5CF6;
+
+    --color-accent:#FF2DA6;
+
+    --color-text:#FFFFFF;
+
+    --color-text-soft:#B9C0D0;
+
+    --glass:rgba(255,255,255,.05);
+
+    --glass-border:rgba(255,255,255,.08);
+
+    --primary-border:rgba(0,229,255,.20);
+
+    --primary-shadow:rgba(0,229,255,.20);
+
+}

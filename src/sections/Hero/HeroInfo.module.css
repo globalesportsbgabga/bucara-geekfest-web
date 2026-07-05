@@ -1,0 +1,51 @@
+.info{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    margin-top:32px;
+
+}
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--color-text-soft);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.item span{
+
+    font-size:1.1rem;
+
+}
+
+.item p{
+
+    margin:0;
+
+    font-size:.95rem;
+
+    color:inherit;
+
+}

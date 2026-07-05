@@ -1,0 +1,55 @@
+.button{
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    font-size:1rem;
+
+    transition:all .35s ease;
+
+}
+
+.button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.primary{
+
+    background:var(--gradient-primary);
+
+    color:white;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.primary:hover{
+
+    filter:brightness(1.08);
+
+}
+
+.secondary{
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.20);
+
+}
+
+.secondary:hover{
+
+    background:rgba(255,255,255,.05);
+
+}

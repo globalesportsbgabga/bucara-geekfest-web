@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding: 120px 20px 80px;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 229, 255, 0.15), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.15), transparent 35%),
+    radial-gradient(circle at 50% 85%, rgba(255, 45, 166, 0.10), transparent 35%),
+    linear-gradient(
+      180deg,
+      #05070D 0%,
+      #090D18 45%,
+      #05070D 100%
+    );
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.55)
+  );
+
+  backdrop-filter: blur(2px);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: min(900px, 95%);
+  text-align: center;
+  animation: fadeUp .9s ease;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: var(--color-primary);
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  color: var(--color-text-soft);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

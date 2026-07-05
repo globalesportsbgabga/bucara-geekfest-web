@@ -1,0 +1,43 @@
+@import "./card.css";
+.app{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,#16203d 0%,#090b12 60%,#050608 100%);
+
+    color:white;
+
+}
+
+.main-layout{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}

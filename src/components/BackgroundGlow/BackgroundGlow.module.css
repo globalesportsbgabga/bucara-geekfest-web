@@ -1,0 +1,109 @@
+.glowContainer{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+.glowOne,
+.glowTwo,
+.glowThree{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(90px);
+
+    opacity:.30;
+
+    animation:floatGlow 12s ease-in-out infinite;
+
+}
+
+.glowOne{
+
+    width:420px;
+
+    height:420px;
+
+    background:#00E5FF;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.glowTwo{
+
+    width:360px;
+
+    height:360px;
+
+    background:#8B5CF6;
+
+    right:-100px;
+
+    top:20%;
+
+    animation-delay:2s;
+
+}
+
+.glowThree{
+
+    width:420px;
+
+    height:420px;
+
+    background:#FF2DA6;
+
+    bottom:-180px;
+
+    left:35%;
+
+    animation-delay:4s;
+
+}
+
+@keyframes floatGlow{
+
+    0%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    25%{
+
+        transform:translate(40px,-30px) scale(1.05);
+
+    }
+
+    50%{
+
+        transform:translate(-20px,40px) scale(.95);
+
+    }
+
+    75%{
+
+        transform:translate(30px,20px) scale(1.08);
+
+    }
+
+    100%{
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+}

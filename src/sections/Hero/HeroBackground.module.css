@@ -1,0 +1,90 @@
+.background{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #05070D,
+            #090D18,
+            #05070D
+        );
+
+}
+
+.lightOne{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:rgba(0,229,255,.10);
+
+    filter:blur(120px);
+
+    top:-250px;
+
+    left:-150px;
+
+}
+
+.lightTwo{
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(139,92,246,.12);
+
+    filter:blur(130px);
+
+    top:-180px;
+
+    right:-220px;
+
+}
+
+.lightThree{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(255,45,166,.10);
+
+    filter:blur(120px);
+
+    bottom:-180px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.55)
+    );
+
+}

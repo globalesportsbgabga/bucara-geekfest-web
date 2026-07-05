@@ -1,0 +1,157 @@
+.tournaments{
+
+    padding:120px 20px;
+
+    background:#05070D;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    margin-bottom:20px;
+
+    border-radius:999px;
+
+    background:rgba(0,229,255,.08);
+
+    border:1px solid rgba(0,229,255,.20);
+
+    color:var(--color-primary);
+
+    font-weight:600;
+
+}
+
+.container h2{
+
+    font-size:clamp(2rem,5vw,3.5rem);
+
+    margin-bottom:20px;
+
+}
+
+.description{
+
+    max-width:720px;
+
+    margin:0 auto 60px;
+
+    color:var(--color-text-soft);
+
+    line-height:1.8;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    text-align:left;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(0,229,255,.35);
+
+}
+
+.category{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    margin-bottom:18px;
+
+    border-radius:999px;
+
+    background:rgba(139,92,246,.15);
+
+    color:#B794F6;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:white;
+
+    font-size:1.4rem;
+
+}
+
+.card p{
+
+    color:var(--color-text-soft);
+
+    line-height:1.7;
+
+    flex:1;
+
+    margin-bottom:25px;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(0,229,255,.12);
+
+    color:var(--color-primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
