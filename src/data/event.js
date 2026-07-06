@@ -1,6 +1,6 @@
 const event = {
 
-    name: "Bucara GeekFest",
+    name: "Bucara GeekFest lvl 1",
 
     edition: "2026",
 
@@ -24,7 +24,7 @@ const event = {
 
     days: 3,
 
-    whatsapp: "573000000000",
+    whatsapp: "573058144929",
 
     tickets: "#"
 

@@ -1,0 +1,91 @@
+import styles from "./RegistrationHub.module.css";
+
+const registrations = [
+  {
+    id: 1,
+    title: "Registro de Asistentes",
+    description: "Recibe noticias, anuncios e información oficial del Bucara GeekFest.",
+    button: "Registrarme",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Inscripción a Torneos",
+    description: "Consulta las categorías disponibles e inscríbete para competir.",
+    button: "Ir al formulario",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Concurso Cosplay",
+    description: "Participa con tu mejor cosplay y demuestra tu talento.",
+    button: "Inscribirme",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Quiero ser Expositor",
+    description: "Reserva un stand para mostrar y vender tus productos.",
+    button: "Solicitar Stand",
+    link: "#"
+  },
+  {
+    id: 5,
+    title: "Quiero ser Patrocinador",
+    description: "Conoce nuestros planes de patrocinio y haz crecer tu marca con nosotros.",
+    button: "Más información",
+    link: "#"
+  }
+];
+
+function RegistrationHub() {
+  return (
+    <section className={styles.registration} id="registro">
+
+      <div className={styles.container}>
+
+        <span className={styles.badge}>
+          Centro de Inscripciones
+        </span>
+
+        <h2>Todo comienza aquí</h2>
+
+        <p className={styles.description}>
+          Selecciona la opción que mejor se adapte a ti y forma parte del Bucara GeekFest.
+        </p>
+
+        <div className={styles.grid}>
+
+          {registrations.map((item) => (
+
+            <article
+              key={item.id}
+              className={styles.card}
+            >
+
+              <h3>{item.title}</h3>
+
+              <p>{item.description}</p>
+
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.button}
+              >
+                {item.button}
+              </a>
+
+            </article>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default RegistrationHub;

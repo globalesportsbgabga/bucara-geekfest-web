@@ -9,7 +9,7 @@ const site = {
 
     title: "La experiencia geek más grande",
 
-    highlight: "del Oriente Colombiano",
+    highlight: "del Nororiente Colombiano",
 
     description:
       "Videojuegos, cosplay, anime, K-Pop, TCG, invitados especiales, tecnología, torneos y una experiencia diseñada para toda la comunidad geek.",

@@ -19,27 +19,41 @@ function Navbar() {
 
         <nav className={styles.menu}>
 
-          <a href="#inicio">Inicio</a>
+  <a href="#inicio">Inicio</a>
 
-          <a href="#invitados">Invitados</a>
+  <a href="#experience">Experiencia</a>
 
-          <a href="#torneos">Torneos</a>
+  <a href="#invitados">Invitados</a>
 
-          <a href="#agenda">Agenda</a>
+  <a href="#expositores">Expositores</a>
 
-          <a href="#contacto">Contacto</a>
+  <a href="#torneos">Torneos</a>
 
-        </nav>
+  <a href="#registro">Registro</a>
+
+  <a href="#agenda">Agenda</a>
+
+  <a href="#patrocinadores">Patrocinadores</a>
+
+  <a href="#faq">FAQ</a>
+
+</nav>
 
         <div className={styles.actions}>
 
-          <button className={styles.secondary}>
-            VIP
-          </button>
+          <a
+    href="#registro"
+    className={styles.primary}
+>
+    🎟️ VIP
+</a>
 
-          <button className={styles.primary}>
-            Comprar Entradas
-          </button>
+          <a
+    href="#registro"
+    className={styles.primary}
+>
+    🎟️ Regístrate
+</a>
 
         </div>
 

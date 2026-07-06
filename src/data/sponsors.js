@@ -1,24 +1,34 @@
 const sponsors = [
   {
     id: 1,
-    name: "Sponsor 1",
-    image: "/assets/sponsors/sponsor1.png",
+    name: "Patrocinador Principal",
+    image: "/assets/sponsors/placeholder.webp",
   },
   {
     id: 2,
-    name: "Sponsor 2",
-    image: "/assets/sponsors/sponsor2.png",
+    name: "Aliado Estratégico",
+    image: "/assets/sponsors/placeholder.webp",
   },
   {
     id: 3,
-    name: "Sponsor 3",
-    image: "/assets/sponsors/sponsor3.png",
+    name: "Próximamente",
+    image: "/assets/sponsors/placeholder.webp",
   },
   {
     id: 4,
-    name: "Sponsor 4",
-    image: "/assets/sponsors/sponsor4.png",
+    name: "Próximamente",
+    image: "/assets/sponsors/placeholder.webp",
   },
+  {
+    id: 5,
+    name: "Próximamente",
+    image: "/assets/sponsors/placeholder.webp",
+  },
+  {
+    id: 6,
+    name: "Próximamente",
+    image: "/assets/sponsors/placeholder.webp",
+  }
 ];
 
 export default sponsors;

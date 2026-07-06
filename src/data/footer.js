@@ -7,22 +7,22 @@ const footer = {
 
   dates: "21 · 22 · 23 de Agosto",
 
-  email: "info@bucarageekfest.com",
+  email: "globalesportsbga@gmail.com",
 
-  phone: "+57 300 000 0000",
+  phone: "+57 3058144929",
 
-  copyright: "© 2026 Bucara GeekFest. Todos los derechos reservados.",
+  copyright: "© 2026 GlobaleSportsbga. Todos los derechos reservados.",
 
   social: [
     {
       id: 1,
       name: "Facebook",
-      url: "#"
+      url: "https://www.facebook.com/globalesportsbga/"
     },
     {
       id: 2,
       name: "Instagram",
-      url: "#"
+      url: "https://www.instagram.com/globalesports/"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const footer = {
     {
       id: 4,
       name: "YouTube",
-      url: "#"
+      url: "https://www.youtube.com/@globalesportsbga"
     }
   ]
 };

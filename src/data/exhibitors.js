@@ -1,8 +1,8 @@
 const exhibitors = [
   {
     id: 1,
-    name: "Bucara GeekFest",
-    instagram: "https://www.instagram.com/bucarageekfest/",
+    name: "Castillo vagabundo",
+    instagram: "https://www.instagram.com/el_castillo_vagabundo/",
     image: "/assets/exhibitors/bucarageekfest.webp"
   },
   {

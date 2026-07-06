@@ -10,6 +10,8 @@ import Exhibitors from "./sections/Exhibitors/Exhibitors";
 
 import Tournaments from "./sections/Tournaments/Tournaments";
 
+import RegistrationHub from "./sections/RegistrationHub/RegistrationHub";
+
 import Schedule from "./sections/Schedule/Schedule";
 
 import Sponsors from "./sections/Sponsors/Sponsors";
@@ -37,6 +39,8 @@ function App() {
         <Exhibitors />
 
         <Tournaments />
+
+        <RegistrationHub />
 
         <Schedule />
 
