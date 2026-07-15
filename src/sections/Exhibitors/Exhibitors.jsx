@@ -12,7 +12,7 @@ function Exhibitors() {
 
   function getUser(link) {
     return link
-      .replace("https://www.instagram.com/", "")
+      .replace("https://www.instagram.com/globalesports/", "")
       .replace("/", "");
   }
 

@@ -7,14 +7,16 @@ function HeroButtons() {
         <div className={styles.buttons}>
 
             <a
-                href="#"
-                className={styles.primary}
+                href="https://wa.me/573058144929"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.secondary}
             >
-                Comprar Entradas
+                SER VIP
             </a>
 
             <a
-                href="https://wa.me/573000000000"
+                href="https://wa.me/573058144929"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.secondary}

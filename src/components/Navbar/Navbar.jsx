@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css";
-
+import links from "../../data/links";
 function Navbar() {
   return (
     <header className={styles.navbar}>
@@ -10,10 +10,10 @@ function Navbar() {
 
           <img
             src="/assets/logo/logo.png"
-            alt="Bucara GeekFest"
+            alt=""
           />
 
-          <span>Bucara GeekFest</span>
+          <span></span>
 
         </a>
 
@@ -29,7 +29,13 @@ function Navbar() {
 
   <a href="#torneos">Torneos</a>
 
-  <a href="#registro">Registro</a>
+  <a href={links.vip} target="_blank" rel="noopener noreferrer">
+    Registro
+  </a>
+
+  <a href={links.exhibitor} target="_blank" rel="noopener noreferrer">
+    Expositores
+  </a>
 
   <a href="#agenda">Agenda</a>
 
@@ -41,18 +47,22 @@ function Navbar() {
 
         <div className={styles.actions}>
 
-          <a
-    href="#registro"
+<a
+    href={links.vip}
+    target="_blank"
+    rel="noopener noreferrer"
     className={styles.primary}
 >
-    🎟️ VIP
+    🎟️ Quieres ser VIP ?
 </a>
 
-          <a
-    href="#registro"
+<a
+    href={links.exhibitor}
+    target="_blank"
+    rel="noopener noreferrer"
     className={styles.primary}
 >
-    🎟️ Regístrate
+    🏪 Quieres ser expositor ?
 </a>
 
         </div>
