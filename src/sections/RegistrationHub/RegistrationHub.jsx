@@ -1,4 +1,5 @@
 import styles from "./RegistrationHub.module.css";
+import links from "../../data/links";
 
 const registrations = [
   {
@@ -6,42 +7,41 @@ const registrations = [
     title: "Registro de Asistentes",
     description: "Recibe noticias, anuncios e información oficial del Bucara GeekFest.",
     button: "Registrarme",
-    link: "#"
+    link: links.tickets
   },
   {
     id: 2,
     title: "Inscripción a Torneos",
     description: "Consulta las categorías disponibles e inscríbete para competir.",
     button: "Ir al formulario",
-    link: "#"
+    link: links.tournaments
   },
   {
     id: 3,
     title: "Concurso Cosplay",
     description: "Participa con tu mejor cosplay y demuestra tu talento.",
     button: "Inscribirme",
-    link: "#"
+    link: links.cosplay
   },
   {
     id: 4,
     title: "Quiero ser Expositor",
     description: "Reserva un stand para mostrar y vender tus productos.",
     button: "Solicitar Stand",
-    link: "#"
+    link: links.exhibitor
   },
   {
     id: 5,
     title: "Quiero ser Patrocinador",
     description: "Conoce nuestros planes de patrocinio y haz crecer tu marca con nosotros.",
     button: "Más información",
-    link: "#"
+    link: links.sponsor
   }
 ];
 
 function RegistrationHub() {
   return (
     <section className={styles.registration} id="registro">
-
       <div className={styles.container}>
 
         <span className={styles.badge}>
@@ -83,7 +83,6 @@ function RegistrationHub() {
         </div>
 
       </div>
-
     </section>
   );
 }

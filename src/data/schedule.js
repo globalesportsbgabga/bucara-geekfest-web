@@ -3,19 +3,19 @@ const schedule = [
     day: "21 AGO",
     title: "Gran Apertura",
     description:
-      "Apertura oficial del Bucara GeekFest, apertura de la zona comercial, artistas invitados y primeras actividades para todos los asistentes."
+      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
   },
   {
     day: "22 AGO",
     title: "Día de Competencias",
     description:
-      "Torneos de videojuegos, concursos de cosplay, actividades K-Pop, juegos de mesa, TCG, conferencias y experiencias interactivas."
+      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
   },
   {
     day: "23 AGO",
     title: "Finales y Clausura",
     description:
-      "Finales de los torneos principales, premiaciones, presentaciones especiales y ceremonia de clausura del Bucara GeekFest."
+      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
   }
 ];
 
