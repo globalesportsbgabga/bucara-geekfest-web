@@ -15,13 +15,13 @@ const faq = [
     id: 3,
     question: "¿Habrá concurso de cosplay?",
     answer:
-      "Sí. Tendremos concursos de cosplay, videojuegos, TCG, K-Pop y muchas actividades durante los tres días.",
+      "Sí. Tendremos copa Cosplay, videojuegos, TCG, K-Pop y muchas actividades durante los tres días.",
   },
   {
     id: 4,
     question: "¿Dónde puedo comprar las entradas?",
     answer:
-      "Muy pronto anunciaremos la venta oficial desde esta página web y nuestras redes sociales.",
+      "La entrada es libre para todo el publico.",
   },
 ];
 
