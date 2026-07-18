@@ -7,6 +7,11 @@ import "./index.css";
 import "./styles/theme.css";
 import "./styles/app.css";
 
+import { initGA, pageView } from "./lib/analytics";
+
+initGA();
+pageView();
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
