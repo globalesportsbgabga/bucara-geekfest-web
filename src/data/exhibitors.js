@@ -49,105 +49,105 @@ const exhibitors = [
   },
   {
     id: 9,
-    name: "nombre_expositor_09",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor09.webp"
+    name: "comiclanona",
+    instagram: "https://www.instagram.com/comiclanona/",
+    image: "/assets/exhibitors/comiclanona.jpg"
   },
   {
     id: 10,
-    name: "nombre_expositor_10",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor10.webp"
+    name: "queruart",
+    instagram: "https://www.instagram.com/queruart/",
+    image: "/assets/exhibitors/queruart.jpeg"
   },
   {
     id: 11,
-    name: "nombre_expositor_11",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor11.webp"
+    name: "coloramarillo.co",
+    instagram: "https://www.instagram.com/coloramarillo.co/",
+    image: "/assets/exhibitors/coloramarillo.co.jpg"
   },
   {
     id: 12,
-    name: "nombre_expositor_12",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor12.webp"
+    name: "IndiansBaby",
+    instagram: "https://www.instagram.com/indiansbaby/",
+    image: "/assets/exhibitors/IndiansBaby.png"
   },
   {
     id: 13,
-    name: "nombre_expositor_13",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor13.webp"
+    name: "villatorre_creations",
+    instagram: "https://www.instagram.com/villatorre_creations/",
+    image: "/assets/exhibitors/villatorre_creations.jpg"
   },
   {
     id: 14,
-    name: "nombre_expositor_14",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor14.webp"
+    name: "nyartkei",
+    instagram: "https://www.instagram.com/nyartkei/",
+    image: "/assets/exhibitors/nyartkei.jpg"
   },
   {
     id: 15,
-    name: "nombre_expositor_15",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor15.webp"
+    name: "bamboo_store_bga",
+    instagram: "https://www.instagram.com/bamboo_store_bga/",
+    image: "/assets/exhibitors/bamboo_store_bga.jpg"
   },
   {
     id: 16,
-    name: "nombre_expositor_16",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor16.webp"
+    name: "neotokyo_colombia",
+    instagram: "https://www.instagram.com/neotokyo_colombia/",
+    image: "/assets/exhibitors/neotokyo_colombia.jpeg"
   },
   {
     id: 17,
-    name: "nombre_expositor_17",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor17.webp"
+    name: "tunnikka",
+    instagram: "https://www.instagram.com/tunnikka/",
+    image: "/assets/exhibitors/tunnikka.jpeg"
   },
   {
     id: 18,
-    name: "nombre_expositor_18",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor18.webp"
+    name: "quetal_obradordemasas",
+    instagram: "https://www.instagram.com/quetal_obradordemasas/",
+    image: "/assets/exhibitors/quetal_obradordemasas.jpg"
   },
   {
     id: 19,
-    name: "nombre_expositor_19",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor19.webp"
+    name: "mishi.ladas",
+    instagram: "https://www.instagram.com/mishi.ladas/",
+    image: "/assets/exhibitors/mishi.ladas.jpeg"
   },
   {
     id: 20,
-    name: "nombre_expositor_20",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor20.webp"
+    name: "aralan.store",
+    instagram: "https://www.instagram.com/aralan.store/",
+    image: "/assets/exhibitors/aralan.store.png"
   },
   {
     id: 21,
-    name: "nombre_expositor_21",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor21.webp"
+    name: "alldesignyy",
+    instagram: "https://www.instagram.com/alldesignyy/",
+    image: "/assets/exhibitors/alldesignyy.jpg"
   },
   {
     id: 22,
-    name: "nombre_expositor_22",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor22.webp"
+    name: "gataluzgata",
+    instagram: "https://www.instagram.com/gataluzgata/",
+    image: "/assets/exhibitors/gataluzgata.jpeg"
   },
   {
     id: 23,
-    name: "nombre_expositor_23",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor23.webp"
+    name: "Guaridadeldragon",
+    instagram: "https://www.instagram.com/guaridadeldragon/",
+    image: "/assets/exhibitors/guaridadeldragon.png"
   },
   {
     id: 24,
-    name: "nombre_expositor_24",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor24.webp"
+    name: "guatila.tierra.de.sua",
+    instagram: "https://www.instagram.com/guatila.tierra.de.sua/",
+    image: "/assets/exhibitors/guatila.tierra.de.sua.jpg"
   },
   {
     id: 25,
-    name: "nombre_expositor_25",
-    instagram: "https://www.instagram.com/",
-    image: "/assets/exhibitors/expositor25.webp"
+    name: "dihagos",
+    instagram: "https://www.instagram.com/dihagos/",
+    image: "/assets/exhibitors/dihagos.jpeg"
   }
   
 ];

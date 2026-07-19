@@ -1,75 +1,176 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 import links from "../../data/links";
 import Button from "../Button/Button";
 
 function Navbar() {
-  return (
-    <header className={styles.navbar}>
 
-      <div className={styles.container}>
+    const [menuOpen, setMenuOpen] = useState(false);
 
-        <a href="/" className={styles.logo}>
-          <img
-            src="/assets/logo/logo.png"
-            alt="Bucara GeekFest"
-          />
-        </a>
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
-        <nav className={styles.menu}>
+    return (
 
-          <a href="#inicio">Inicio</a>
+        <header className={styles.navbar}>
 
-          <a href="#experience">Experiencia</a>
+            <div className={styles.container}>
 
-          <a href="#invitados">Invitados</a>
+                <a
+                    href="#inicio"
+                    className={styles.logo}
+                    onClick={closeMenu}
+                >
+                    <img
+                        src="/assets/logo/logo.png"
+                        alt="Bucara GeekFest"
+                    />
+                </a>
 
-          <a href="#expositores">Expositores</a>
+                {/* =====================
+                    MENÚ ESCRITORIO
+                ====================== */}
 
-          <a href="#torneos">Torneos</a>
+                <nav className={styles.menu}>
 
-          <a href="#agenda">Agenda</a>
+                    <a href="#inicio">Inicio</a>
 
-          <a href="#patrocinadores">Patrocinadores</a>
+                    <a href="#experience">Experiencia</a>
 
-          <a href="#faq">FAQ</a>
+                    <a href="#invitados">Invitados</a>
 
-        </nav>
+                    <a href="#zona-comercial">Expositores</a>
 
-        <div className={styles.actions}>
+                    <a href="#torneos">Torneos</a>
 
-          <Button
-            href={links.exhibitor}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="ghost"
-          >
-            Expositor
-          </Button>
+                    <a href="#agenda">Agenda</a>
 
-          <Button
-            href={links.vip}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="secondary"
-          >
-            VIP
-          </Button>
+                    <a href="#patrocinadores">Sponsors</a>
 
-          <Button
-            href={links.tickets}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="primary"
-          >
-            VIP
-          </Button>
+                    <a href="#faq">FAQ</a>
 
-        </div>
+                </nav>
 
-      </div>
+                <div className={styles.actions}>
 
-    </header>
-  );
+                    <Button
+                        href={links.exhibitor}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="ghost"
+                    >
+                        Expositor
+                    </Button>
+
+                    <Button
+                        href={links.vip}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="secondary"
+                    >
+                        VIP
+                    </Button>
+
+                    <Button
+                        href={links.tickets}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="primary"
+                    >
+                        Tickets
+                    </Button>
+
+                </div>
+
+                {/* =====================
+                    BOTÓN HAMBURGUESA
+                ====================== */}
+
+                <button
+                    className={styles.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Abrir menú"
+                >
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+            {/* =====================
+                MENÚ MÓVIL
+            ====================== */}
+
+            <div
+                className={`${styles.mobileMenu} ${menuOpen ? styles.show : ""}`}
+            >
+
+                <button
+                    className={styles.close}
+                    onClick={closeMenu}
+                >
+                    ✕
+                </button>
+
+                <a href="#inicio" onClick={closeMenu}>Inicio</a>
+
+                <a href="#experience" onClick={closeMenu}>Experiencia</a>
+
+                <a href="#invitados" onClick={closeMenu}>Invitados</a>
+
+                <a href="#zona-comercial" onClick={closeMenu}>Expositores</a>
+
+                <a href="#torneos" onClick={closeMenu}>Torneos</a>
+
+                <a href="#agenda" onClick={closeMenu}>Agenda</a>
+
+                <a href="#patrocinadores" onClick={closeMenu}>Sponsors</a>
+
+                <a href="#faq" onClick={closeMenu}>FAQ</a>
+
+                <div className={styles.mobileButtons}>
+
+                    <Button
+                        href={links.tickets}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="primary"
+                    >
+                        Comprar Tickets
+                    </Button>
+
+                    <Button
+                        href={links.vip}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="secondary"
+                    >
+                        Pase VIP
+                    </Button>
+
+                    <Button
+                        href={links.exhibitor}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="ghost"
+                    >
+                        Quiero ser Expositor
+                    </Button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+    );
+
 }
 
 export default Navbar;
