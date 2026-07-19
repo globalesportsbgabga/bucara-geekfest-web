@@ -1,66 +1,108 @@
 import styles from "./Tournaments.module.css";
-
 import tournaments from "../../data/tournaments";
 
 function Tournaments() {
 
-  return (
+    return (
 
-    <section
-      className={styles.tournaments}
-      id="torneos"
-    >
+        <section
+            className={styles.tournaments}
+            id="torneos"
+        >
 
-      <div className={styles.container}>
+            <div className={styles.container}>
 
-        <span className={styles.badge}>
-          Torneos
-        </span>
+                <span className={styles.badge}>
+                    Torneos Oficiales
+                </span>
 
-        <h2>
-          Vive la competencia
-        </h2>
+                <h2>
+                    ¿Estás listo para competir?
+                </h2>
 
-        <p className={styles.description}>
-          Participa en nuestros torneos y actividades durante los tres días del Bucara GeekFest.
-        </p>
+                <p className={styles.description}>
+                    Inscríbete directamente en tu torneo favorito y asegura tu cupo
+                    antes de que se agoten.
+                </p>
 
-        <div className={styles.grid}>
+                <div className={styles.grid}>
 
-          {tournaments.map((tournament) => (
+                    {tournaments.map((tournament) => (
 
-            <article
-              key={tournament.id}
-              className={styles.card}
-            >
+                        <article
+                            key={tournament.id}
+                            className={styles.card}
+                        >
 
-              <span className={styles.category}>
-                {tournament.category}
-              </span>
+                            <div className={styles.imageContainer}>
 
-              <h3>
-                {tournament.title}
-              </h3>
+                                <img
+                                    src={tournament.image}
+                                    alt={tournament.title}
+                                    className={styles.image}
+                                />
 
-              <p>
-                {tournament.description}
-              </p>
+                                <span className={styles.category}>
+                                    {tournament.category}
+                                </span>
 
-              <span className={styles.status}>
-                {tournament.status}
-              </span>
+                            </div>
 
-            </article>
+                            <div className={styles.content}>
 
-          ))}
+                                <h3>
+                                    {tournament.title}
+                                </h3>
 
-        </div>
+                                <p>
+                                    {tournament.description}
+                                </p>
 
-      </div>
+                                <div className={styles.info}>
 
-    </section>
+                                    <div>
+                                        <strong>🏆 Premio</strong>
+                                        <span>{tournament.prize}</span>
+                                    </div>
 
-  );
+                                    <div>
+                                        <strong>👥 Cupos</strong>
+                                        <span>{tournament.slots}</span>
+                                    </div>
+
+                                    <div>
+                                        <strong>📅 Fecha</strong>
+                                        <span>{tournament.date}</span>
+                                    </div>
+
+                                </div>
+
+                                <span className={styles.status}>
+                                    🟢 {tournament.status}
+                                </span>
+
+                                <a
+                                    href={tournament.register}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.button}
+                                >
+                                    Inscribirme Ahora
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    ))}
+
+                </div>
+
+            </div>
+
+        </section>
+
+    );
 
 }
 

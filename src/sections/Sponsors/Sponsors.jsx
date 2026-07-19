@@ -2,49 +2,111 @@ import styles from "./Sponsors.module.css";
 import sponsors from "../../data/sponsors";
 
 function Sponsors() {
-  return (
-    <section className={styles.sponsors} id="patrocinadores">
 
-      <div className={styles.container}>
+    const sponsorsOfficial = sponsors.filter(
+        (item) => item.type === "sponsor"
+    );
 
-        <span className={styles.badge}>
-          Patrocinadores
-        </span>
+    const allies = sponsors.filter(
+        (item) => item.type === "ally"
+    );
 
-        <h2>
-          Ellos hacen posible el Bucara GeekFest
-        </h2>
+    function Card({ item }) {
 
-        <p>
-          Gracias a nuestros patrocinadores y aliados estratégicos
-          por apoyar el crecimiento de la comunidad geek,
-          gamer, cosplay y tecnológica.
-        </p>
+        return (
 
-        <div className={styles.grid}>
-
-          {sponsors.map((sponsor) => (
-
-            <article
-              key={sponsor.id}
-              className={styles.card}
+            <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.card}
             >
 
-              <img
-                src={sponsor.image}
-                alt={sponsor.name}
-              />
+                <img
+                    src={item.image}
+                    alt={item.name}
+                />
 
-            </article>
+                <h3>
+                    {item.name}
+                </h3>
 
-          ))}
+            </a>
 
-        </div>
+        );
 
-      </div>
+    }
 
-    </section>
-  );
+    return (
+
+        <section
+            className={styles.sponsors}
+            id="patrocinadores"
+        >
+
+            <div className={styles.container}>
+
+                <span className={styles.badge}>
+                    Patrocinadores & Aliados
+                </span>
+
+                <h2>
+
+                    Gracias por creer en Bucara GeekFest
+
+                </h2>
+
+                <p>
+
+                    Empresas, marcas y aliados que hacen posible
+                    esta experiencia para toda la comunidad geek.
+
+                </p>
+
+                <h3 className={styles.title}>
+
+                    PATROCINADORES OFICIALES
+
+                </h3>
+
+                <div className={styles.gridSponsors}>
+
+                    {sponsorsOfficial.map((item)=>(
+
+                        <Card
+                            key={item.id}
+                            item={item}
+                        />
+
+                    ))}
+
+                </div>
+
+                <h3 className={styles.title}>
+
+                    APOYAN
+
+                </h3>
+
+                <div className={styles.gridAllies}>
+
+                    {allies.map((item)=>(
+
+                        <Card
+                            key={item.id}
+                            item={item}
+                        />
+
+                    ))}
+
+                </div>
+
+            </div>
+
+        </section>
+
+    );
+
 }
 
 export default Sponsors;

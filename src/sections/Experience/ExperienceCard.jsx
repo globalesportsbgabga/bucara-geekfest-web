@@ -1,12 +1,14 @@
 import Card from "@/components/ui/Card/Card";
-
 import styles from "./Experience.module.css";
-
 import icons from "@/utils/icons";
-
 import { ArrowRight } from "lucide-react";
 
-function ExperienceCard({ icon, title, description }) {
+function ExperienceCard({
+    icon,
+    title,
+    description,
+    image
+}) {
 
     const Icon = icons[icon];
 
@@ -14,24 +16,39 @@ function ExperienceCard({ icon, title, description }) {
 
         <Card className={styles.card}>
 
-            <div className={styles.icon}>
+            <div
+                className={styles.image}
+                style={{
+                    backgroundImage: `url(${image})`
+                }}
+            >
 
-                <Icon
-                    size={46}
-                    strokeWidth={2}
-                />
+                <div className={styles.imageOverlay}></div>
 
             </div>
 
-            <h3>{title}</h3>
+            <div className={styles.content}>
 
-            <p>{description}</p>
+                <div className={styles.icon}>
 
-            <div className={styles.link}>
+                    <Icon
+                        size={38}
+                        strokeWidth={2}
+                    />
 
-                Explorar
+                </div>
 
-                <ArrowRight size={18} />
+                <h3>{title}</h3>
+
+                <p>{description}</p>
+
+                <div className={styles.link}>
+
+                    Explorar
+
+                    <ArrowRight size={18} />
+
+                </div>
 
             </div>
 

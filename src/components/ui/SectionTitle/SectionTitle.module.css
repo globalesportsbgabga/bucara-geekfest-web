@@ -1,0 +1,65 @@
+.wrapper{
+
+    margin-bottom:80px;
+
+}
+
+.center{
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(111,0,255,.18);
+
+    border:1px solid rgba(111,0,255,.35);
+
+    color:#00E5FF;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:clamp(3rem,7vw,5.5rem);
+
+    line-height:1;
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+}
+
+p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#BFC9D9;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}

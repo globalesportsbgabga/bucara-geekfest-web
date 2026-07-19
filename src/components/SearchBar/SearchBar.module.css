@@ -1,0 +1,67 @@
+.search{
+
+    width:min(700px,95%);
+    margin:50px auto;
+
+    position:relative;
+
+}
+
+.search::before{
+
+    content:"🔍";
+
+    position:absolute;
+
+    left:22px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:1.1rem;
+
+    opacity:.7;
+
+}
+
+.search input{
+
+    width:100%;
+
+    padding:18px 24px 18px 58px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    color:white;
+
+    font-size:1rem;
+
+    transition:.35s;
+
+    outline:none;
+
+}
+
+.search input::placeholder{
+
+    color:rgba(255,255,255,.45);
+
+}
+
+.search input:focus{
+
+    border-color:var(--color-primary);
+
+    box-shadow:
+        0 0 25px rgba(0,229,255,.20);
+
+    background:rgba(255,255,255,.08);
+
+}

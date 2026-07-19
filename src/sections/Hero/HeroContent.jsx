@@ -8,44 +8,42 @@ import HeroBadges from "./HeroBadges";
 import HeroScroll from "./HeroScroll";
 
 function HeroContent() {
+  return (
+    <div className={styles.content}>
 
-    return (
+      <span className={styles.badge}>
+        21 · 22 · 23 AGOSTO 2026
+      </span>
 
-        <div className={styles.content}>
+      <h1>
+        EL EVENTO GEEK
+        <br />
+        <span>MÁS GRANDE</span>
+        <br />
+        DEL NORORIENTE COLOMBIANO
+      </h1>
 
-            <span className={styles.badge}>
-                Bucara GeekFest 2026
-            </span>
+      <p>
+        Tres días de videojuegos, anime, cosplay,
+        K-Pop, TCG, tecnología, invitados especiales,
+        competencias, experiencias inmersivas y una
+        comunidad que vive la cultura geek como nunca antes.
+      </p>
 
-            <h1>
-                Vive la experiencia
-                <br />
-                <span>Bucara GeekFest</span>
-            </h1>
+      <HeroInfo />
 
-            <p>
-                El evento más grande de cultura geek,
-                anime, cosplay, videojuegos,
-                K-Pop, TCG, tecnología y entretenimiento
-                de Santander.
-            </p>
+      <HeroButtons />
 
-            <HeroInfo />
+      <HeroCountdown />
 
-            <HeroButtons />
+      <HeroStats />
 
-            <HeroCountdown />
+      <HeroBadges />
 
-            <HeroStats />
+      <HeroScroll />
 
-            <HeroBadges />
-
-            <HeroScroll />
-
-        </div>
-
-    );
-
+    </div>
+  );
 }
 
 export default HeroContent;

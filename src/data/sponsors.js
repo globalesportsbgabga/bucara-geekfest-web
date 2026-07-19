@@ -1,34 +1,77 @@
 const sponsors = [
+
+  // ==========================
+  // SPONSORS
+  // ==========================
+
   {
     id: 1,
-    name: "Patrocinador Principal",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "sponsor",
+    name: "Sponsor Principal",
+    image: "/assets/sponsors/sponsor1.webp",
+    link: "https://instagram.com/"
   },
+
   {
     id: 2,
-    name: "Aliado Estratégico",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "sponsor",
+    name: "Sponsor #2",
+    image: "/assets/sponsors/sponsor2.webp",
+    link: "https://instagram.com/"
   },
+
   {
     id: 3,
-    name: "Próximamente",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "sponsor",
+    name: "Sponsor #3",
+    image: "/assets/sponsors/sponsor3.webp",
+    link: "https://instagram.com/"
   },
+
+  // ==========================
+  // ALIADOS
+  // ==========================
+
   {
     id: 4,
-    name: "Próximamente",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "ally",
+    name: "Aliado #1",
+    image: "/assets/sponsors/ally1.webp",
+    link: "https://instagram.com/"
   },
+
   {
     id: 5,
-    name: "Próximamente",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "ally",
+    name: "Aliado #2",
+    image: "/assets/sponsors/ally2.webp",
+    link: "https://instagram.com/"
   },
+
   {
     id: 6,
-    name: "Próximamente",
-    image: "/assets/sponsors/placeholder.webp",
+    type: "ally",
+    name: "Aliado #3",
+    image: "/assets/sponsors/ally3.webp",
+    link: "https://instagram.com/"
+  },
+
+  {
+    id: 7,
+    type: "ally",
+    name: "Aliado #4",
+    image: "/assets/sponsors/ally4.webp",
+    link: "https://instagram.com/"
+  },
+
+  {
+    id: 8,
+    type: "ally",
+    name: "Aliado #5",
+    image: "/assets/sponsors/ally5.webp",
+    link: "https://instagram.com/"
   }
+
 ];
 
 export default sponsors;

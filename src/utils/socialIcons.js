@@ -1,26 +1,20 @@
 import {
-
-    Instagram,
-
-    Facebook,
-
-    Youtube,
-
-    Twitch
-
-} from "lucide-react";
-
-import { FaTiktok } from "react-icons/fa";
+    FaInstagram,
+    FaFacebookF,
+    FaYoutube,
+    FaTwitch,
+    FaTiktok
+} from "react-icons/fa";
 
 const socialIcons = {
 
-    instagram: Instagram,
+    instagram: FaInstagram,
 
-    facebook: Facebook,
+    facebook: FaFacebookF,
 
-    youtube: Youtube,
+    youtube: FaYoutube,
 
-    twitch: Twitch,
+    twitch: FaTwitch,
 
     tiktok: FaTiktok,
 

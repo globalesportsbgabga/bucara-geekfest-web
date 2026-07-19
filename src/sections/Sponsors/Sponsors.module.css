@@ -8,7 +8,7 @@
 
 .container{
 
-    max-width:1200px;
+    max-width:1300px;
 
     margin:auto;
 
@@ -26,7 +26,7 @@
 
     background:rgba(0,229,255,.08);
 
-    border:1px solid rgba(0,229,255,.20);
+    border:1px solid rgba(0,229,255,.2);
 
     color:var(--color-primary);
 
@@ -46,7 +46,7 @@
 
 .container p{
 
-    max-width:720px;
+    max-width:760px;
 
     margin:auto;
 
@@ -56,31 +56,63 @@
 
 }
 
-.grid{
+.title{
 
     margin-top:70px;
 
-    display:grid;
+    margin-bottom:35px;
 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    color:white;
 
-    gap:30px;
+    font-size:1.8rem;
 
 }
 
-.card{
+/* Sponsors */
 
-    height:170px;
+.gridSponsors{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-bottom:70px;
+
+}
+
+/* Aliados */
+
+.gridAllies{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+}
+
+/* Tarjetas */
+
+.card{
 
     display:flex;
 
-    align-items:center;
+    flex-direction:column;
 
     justify-content:center;
 
-    padding:30px;
+    align-items:center;
 
-    border-radius:20px;
+    text-decoration:none;
+
+    padding:35px;
+
+    min-height:220px;
+
+    border-radius:22px;
 
     background:rgba(255,255,255,.05);
 
@@ -88,13 +120,19 @@
 
     transition:.35s;
 
+    backdrop-filter:blur(15px);
+
 }
 
 .card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
-    border-color:rgba(0,229,255,.35);
+    border-color:rgba(0,229,255,.45);
+
+    box-shadow:
+
+        0 0 35px rgba(0,229,255,.18);
 
 }
 
@@ -102,13 +140,9 @@
 
     width:100%;
 
-    max-width:160px;
+    max-width:180px;
 
     object-fit:contain;
-
-    filter:grayscale(100%);
-
-    opacity:.75;
 
     transition:.35s;
 
@@ -116,10 +150,64 @@
 
 .card:hover img{
 
-    filter:grayscale(0);
+    transform:scale(1.08);
 
-    opacity:1;
+}
 
-    transform:scale(1.05);
+.card h3{
+
+    margin-top:25px;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .gridSponsors{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .gridAllies{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .gridSponsors{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gridAllies{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .gridAllies{
+
+        grid-template-columns:1fr;
+
+    }
 
 }

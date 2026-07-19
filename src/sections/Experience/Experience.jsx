@@ -1,7 +1,6 @@
 import styles from "./Experience.module.css";
 
 import experience from "@/data/experience";
-import sections from "@/data/sections";
 
 import ExperienceCard from "./ExperienceCard";
 

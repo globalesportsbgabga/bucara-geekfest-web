@@ -1,14 +1,25 @@
 import Card from "@/components/ui/Card/Card";
-
 import styles from "./GuestCard.module.css";
-
 import socialIcons from "@/utils/socialIcons";
 
 function GuestCard({ guest }) {
 
+    const instagram = guest.social?.instagram;
+
+    const openInstagram = () => {
+
+        if (instagram) {
+            window.open(instagram, "_blank");
+        }
+
+    };
+
     return (
 
-        <Card className={styles.card}>
+        <Card
+            className={styles.card}
+            onClick={openInstagram}
+        >
 
             <img
                 src={guest.image}
@@ -36,7 +47,8 @@ function GuestCard({ guest }) {
                                 key={key}
                                 href={value}
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
+                                onClick={(e) => e.stopPropagation()}
                             >
 
                                 <Icon size={18} />

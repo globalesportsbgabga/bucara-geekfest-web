@@ -10,6 +10,8 @@ import Exhibitors from "./sections/Exhibitors/Exhibitors";
 
 import Tournaments from "./sections/Tournaments/Tournaments";
 
+import BannerCTA from "./sections/BannerCTA/BannerCTA";
+
 import RegistrationHub from "./sections/RegistrationHub/RegistrationHub";
 
 import Schedule from "./sections/Schedule/Schedule";
@@ -22,6 +24,8 @@ import Footer from "./sections/Footer/Footer";
 
 import Experience from "./sections/Experience/Experience";
 
+import Marquee from "./sections/Marquee/Marquee";
+
 function App() {
   return (
     <div className="app">
@@ -32,19 +36,24 @@ function App() {
 
         <Hero />
 
-        <Experience />
+        <Marquee />
+
+        <Sponsors />
 
         <Guests />
 
         <Exhibitors />
 
+        <BannerCTA />
+
         <Tournaments />
+
+         <Experience />
+
 
         <RegistrationHub />
 
         <Schedule />
-
-        <Sponsors />
 
         <Faq />
 

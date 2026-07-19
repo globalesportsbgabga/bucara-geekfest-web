@@ -4,6 +4,8 @@ import guests from "../../data/guests";
 
 import useReveal from "../../hooks/useReveal";
 
+import GuestCard from "./GuestCard";
+
 function Guests() {
 
     const { ref, visible } = useReveal();
@@ -35,25 +37,10 @@ function Guests() {
 
                     {guests.map((guest) => (
 
-                        <article
+                        <GuestCard
                             key={guest.id}
-                            className={styles.card}
-                        >
-
-                            <img
-                                src={guest.image}
-                                alt={guest.name}
-                            />
-
-                            <h3>
-                                {guest.name}
-                            </h3>
-
-                            <span>
-                                {guest.role}
-                            </span>
-
-                        </article>
+                            guest={guest}
+                        />
 
                     ))}
 

@@ -1,0 +1,9 @@
+.container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    position:relative;
+
+}

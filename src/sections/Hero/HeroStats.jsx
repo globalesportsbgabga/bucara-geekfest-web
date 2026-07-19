@@ -1,53 +1,57 @@
 import styles from "./HeroStats.module.css";
 
 const stats = [
-    {
-        value: "+5.000",
-        label: "Asistentes"
-    },
-    {
-        value: "100",
-        label: "Expositores"
-    },
-    {
-        value: "30+",
-        label: "Actividades"
-    },
-    {
-        value: "3",
-        label: "Días"
-    }
+  {
+    number: "+5.000",
+    label: "Visitantes",
+    icon: "👥",
+  },
+  {
+    number: "+50",
+    label: "Expositores",
+    icon: "🏪",
+  },
+  {
+    number: "+20",
+    label: "Torneos",
+    icon: "🏆",
+  },
+  {
+    number: "3",
+    label: "Días",
+    icon: "📅",
+  },
 ];
 
 function HeroStats() {
+  return (
+    <div className={styles.stats}>
 
-    return (
+      {stats.map((stat, index) => (
 
-        <div className={styles.stats}>
+        <div
+          key={index}
+          className={styles.card}
+        >
 
-            {stats.map((item) => (
+          <span className={styles.icon}>
+            {stat.icon}
+          </span>
 
-                <div
-                    key={item.label}
-                    className={styles.card}
-                >
+          <span className={styles.number}>
+            {stat.number}
+          </span>
 
-                    <span className={styles.value}>
-                        {item.value}
-                    </span>
-
-                    <span className={styles.label}>
-                        {item.label}
-                    </span>
-
-                </div>
-
-            ))}
+          <span className={styles.label}>
+            {stat.label}
+          </span>
 
         </div>
 
-    );
+      ))}
 
+    </div>
+  );
 }
 
 export default HeroStats;

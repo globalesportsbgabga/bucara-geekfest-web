@@ -1,81 +1,48 @@
 const guests = [
 
     {
+        id:1,
+        name:"Pepe Vilchis",
+        role:"Invitado Internacional",
+        image:"/assets/invitados/invitado1.jfif",
 
-        id: 1,
-
-        name: "Próximamente",
-
-        role: "Invitado Internacional",
-
-        image: "/assets/invitados/placeholder.jpg",
-
-        social: {
-
-            instagram: "",
-
-            facebook: "",
-
-            youtube: "",
-
-            twitch: "",
-
-            tiktok: ""
-
+        social:{
+            instagram:"",
+            facebook:"",
+            youtube:"",
+            twitch:"",
+            tiktok:""
         }
-
     },
 
     {
+        id:2,
+        name:"hikaritenshi",
+        role:"Cosplayer invitada",
+        image:"/assets/invitados/invitado2.jpeg",
 
-        id: 2,
-
-        name: "Próximamente",
-
-        role: "Cosplayer",
-
-        image: "/assets/invitados/placeholder.jpg",
-
-        social: {
-
-            instagram: "",
-
-            facebook: "",
-
-            youtube: "",
-
-            twitch: "",
-
-            tiktok: ""
-
+        social:{
+            instagram:"https://www.instagram.com/hikaritenshi/",
+            facebook:"",
+            youtube:"",
+            twitch:"",
+            tiktok:""
         }
-
     },
 
     {
+        id:3,
+        name:"ennailecosplay",
+        role:"Cosplayer invitada",
+        image:"/assets/invitados/invitado3.jpeg",
 
-        id: 3,
-
-        name: "Próximamente",
-
-        role: "Creador de Contenido",
-
-        image: "/assets/invitados/placeholder.jpg",
-
-        social: {
-
-            instagram: "",
-
-            facebook: "",
-
-            youtube: "",
-
-            twitch: "",
-
-            tiktok: ""
-
+        social:{
+            instagram:"https://www.instagram.com/ennailecosplay/",
+            facebook:"",
+            youtube:"",
+            twitch:"",
+            tiktok:""
         }
-
     }
 
 ];

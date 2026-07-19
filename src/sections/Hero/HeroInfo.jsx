@@ -2,24 +2,60 @@ import styles from "./HeroInfo.module.css";
 
 function HeroInfo() {
 
+    const items = [
+
+        {
+            icon:"📍",
+            title:"Neomundo",
+            text:"Bucaramanga"
+        },
+
+        {
+            icon:"📅",
+            title:"21 · 22 · 23",
+            text:"Agosto 2026"
+        },
+
+        {
+            icon:"🎮",
+            title:"10+",
+            text:"Torneos"
+        },
+
+        {
+            icon:"👥",
+            title:"Invitados",
+            text:"Especiales"
+        }
+
+    ];
+
     return (
 
         <div className={styles.info}>
 
-            <div className={styles.item}>
-                <span>📅</span>
-                <p>21 al 23 de Agosto 2026</p>
-            </div>
+            {items.map((item,index)=>(
 
-            <div className={styles.item}>
-                <span>📍</span>
-                <p>Bucaramanga, Colombia</p>
-            </div>
+                <div
+                    key={index}
+                    className={styles.card}
+                >
 
-            <div className={styles.item}>
-                <span>🕘</span>
-                <p>Desde las 9:00 AM</p>
-            </div>
+                    <div className={styles.icon}>
+                        {item.icon}
+                    </div>
+
+                    <h3>
+                        {item.title}
+                    </h3>
+
+                    <span>
+                        {item.text}
+                    </span>
+
+                </div>
+
+            ))}
 
         </div>
 
