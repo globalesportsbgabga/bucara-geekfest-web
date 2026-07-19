@@ -1,20 +1,65 @@
 import styles from "./Button.module.css";
 
 function Button({
-  children,
-  variant = "primary",
-  onClick,
-  type = "button",
+
+    children,
+
+    href,
+
+    variant = "primary",
+
+    target,
+
+    rel,
+
+    onClick,
+
+    type = "button"
+
 }) {
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`${styles.button} ${styles[variant]}`}
-    >
-      {children}
-    </button>
-  );
+
+    if (href) {
+
+        return (
+
+            <a
+
+                href={href}
+
+                target={target}
+
+                rel={rel}
+
+                className={`${styles.button} ${styles[variant]}`}
+
+            >
+
+                {children}
+
+            </a>
+
+        );
+
+    }
+
+    return (
+
+        <button
+
+            type={type}
+
+            onClick={onClick}
+
+            className={`${styles.button} ${styles[variant]}`}
+
+        >
+
+            {children}
+
+        </button>
+
+    );
+
 }
 
 export default Button;

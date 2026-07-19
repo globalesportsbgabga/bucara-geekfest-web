@@ -53,3 +53,26 @@
     background:rgba(255,255,255,.05);
 
 }
+.ghost{
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.ghost:hover{
+
+    background:rgba(255,255,255,.14);
+
+    border-color:rgba(0,229,255,.35);
+
+    box-shadow:
+
+        0 0 18px rgba(0,229,255,.18);
+
+}

@@ -60,7 +60,7 @@ function Navbar() {
                         rel="noopener noreferrer"
                         variant="ghost"
                     >
-                        Expositor
+                        Quiero ser Expositor
                     </Button>
 
                     <Button
@@ -69,17 +69,10 @@ function Navbar() {
                         rel="noopener noreferrer"
                         variant="secondary"
                     >
-                        VIP
+                        Quiero Pase VIP
                     </Button>
 
-                    <Button
-                        href={links.tickets}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="primary"
-                    >
-                        Tickets
-                    </Button>
+                    
 
                 </div>
 
