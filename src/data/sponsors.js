@@ -11,6 +11,13 @@ const sponsors = [
     image: "/assets/sponsors/poof.png",
     link: "https://www.instagram.com/poofarts_bucaramanga/"
   },
+  {
+    id: 2,
+    type: "sponsor",
+    name: "Patrocinador oficial",
+    image: "/assets/sponsors/kamaitachi.png",
+    link: "https://www.instagram.com/kamaitachishop/"
+  },
 
   
 

@@ -148,8 +148,25 @@ const exhibitors = [
     name: "dihagos",
     instagram: "https://www.instagram.com/dihagos/",
     image: "/assets/exhibitors/dihagos.jpeg"
+  },
+  {
+    id: 26,
+    name: "DiegoSuarez",
+    instagram: "https://www.instagram.com/difersuarez/",
+    image: "/assets/exhibitors/DiegoSuarez.jpeg"
+  },
+  {
+    id: 27,
+    name: "geekbrickoficial",
+    instagram: "https://www.instagram.com/geek_brick_oficial/",
+    image: "/assets/exhibitors/geek_brick_oficial.jpeg"
+  },
+  {
+    id: 28,
+    name: "nombre_expositor_50",
+    instagram: "https://www.instagram.com/",
+    image: "/assets/exhibitors/expositor50.webp"
   }
-  
 ];
 
 export default exhibitors;

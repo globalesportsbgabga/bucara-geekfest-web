@@ -13,15 +13,33 @@ const faq = [
   },
   {
     id: 3,
-    question: "¿Habrá concurso de cosplay?",
+    question: "¿Que beneficios tiene el VIP?",
     answer:
-      "Sí. Tendremos copa Cosplay, videojuegos, TCG, K-Pop y muchas actividades durante los tres días.",
+      "El pase VIP incluye participación de todas las actividades, torneos, sorteos del día, también puedes adquirir para los tres días del evento.",
+  },
+  {
+    id: 3,
+    question: "¿Como consigo el VIP?",
+    answer:
+      "Puedes conseguirlo de forma virtual dando click al boton que dice (quiero pase vip) o en los puntos autorizados en la ciudad de Bucaramanga.",
   },
   {
     id: 4,
+    question: "¿Habrá concurso de cosplay?",
+    answer:
+      "Sí. Tendremos copa Cosplay, donde los participantes podrán mostrar sus habilidades y creatividad en el escenario. Habrá premios para los mejores Cosplays y la oportunidad de ganar reconocimiento en la comunidad.  ",
+  },
+  {
+    id: 5,
     question: "¿Dónde puedo comprar las entradas?",
     answer:
       "La entrada es libre para todo el publico.",
+  },
+  {
+    id: 6,
+    question: "¿Puedo registrarme gratis a algun torneo o actividad?",
+    answer:
+      "Claro, puedes registrarte gratis para participar de un torneo durante todo el evento, o actividad, elige sabiamente.",
   },
 ];
 
