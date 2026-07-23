@@ -1,52 +1,98 @@
-import styles from "./Faq.module.css";
+import { useState } from "react";
+import styles from "./FAQ.module.css";
 import faq from "../../data/faq";
 
-function Faq() {
-  return (
-    <section
-      className={styles.faq}
-      id="faq"
-    >
-      <div className={styles.container}>
+function FAQ() {
 
-        <span className={styles.badge}>
-          Preguntas Frecuentes
-        </span>
+    const [active, setActive] = useState(null);
 
-        <h2>
-          Todo lo que debes saber
-        </h2>
+    function toggle(id){
 
-        <p className={styles.description}>
-          Aquí respondemos las dudas más comunes sobre el Bucara GeekFest.
-        </p>
+        setActive(active === id ? null : id);
 
-        <div className={styles.list}>
+    }
 
-          {faq.map((item) => (
+    return(
 
-            <article
-              key={item.id}
-              className={styles.card}
-            >
+        <section
+            id="faq"
+            className={styles.faq}
+        >
 
-              <h3>
-                {item.question}
-              </h3>
+            <div className={styles.container}>
 
-              <p>
-                {item.answer}
-              </p>
+                <span className={styles.badge}>
+                    Preguntas Frecuentes
+                </span>
 
-            </article>
+                <h2>
+                    Todo lo que necesitas saber
+                </h2>
 
-          ))}
+                <p className={styles.description}>
+                    Resolvemos las dudas más comunes para que disfrutes al máximo
+                    tu experiencia en Bucara GeekFest.
+                </p>
 
-        </div>
+                <div className={styles.accordion}>
 
-      </div>
-    </section>
-  );
+                    {faq.map(item=>(
+
+                        <article
+                            key={item.id}
+                            className={`${styles.item} ${
+                                active === item.id ? styles.active : ""
+                            }`}
+                        >
+
+                            <button
+
+                                className={styles.question}
+
+                                onClick={()=>toggle(item.id)}
+
+                            >
+
+                                <span>
+
+                                    {item.question}
+
+                                </span>
+
+                                <span
+                                    className={styles.icon}
+                                >
+
+                                    +
+
+                                </span>
+
+                            </button>
+
+                            <div
+                                className={styles.answer}
+                            >
+
+                                <p>
+
+                                    {item.answer}
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    ))}
+
+                </div>
+
+            </div>
+
+        </section>
+
+    );
+
 }
 
-export default Faq;
+export default FAQ;

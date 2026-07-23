@@ -1,0 +1,222 @@
+.slider{
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    padding:50px 0;
+}
+
+.slider::-webkit-scrollbar{
+    display:none;
+}
+
+.track{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    padding:0 calc(50vw - 90px);
+    width:max-content;
+}
+
+/* ===================== */
+/* TARJETAS */
+/* ===================== */
+
+.card{
+
+    position:relative;
+
+    width:180px;
+
+    aspect-ratio:9/16;
+
+    flex-shrink:0;
+
+    scroll-snap-align:center;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    padding:4px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #FEDA75,
+        #FA7E1E,
+        #D62976,
+        #962FBF,
+        #4F5BD5
+    );
+
+    transform:scale(.82);
+
+    opacity:.45;
+
+    filter:blur(1px);
+
+    transition:
+        transform .45s,
+        opacity .45s,
+        filter .45s,
+        box-shadow .45s;
+
+}
+
+.card img{
+
+    position:absolute;
+
+    inset:4px;
+
+    width:calc(100% - 8px);
+
+    height:calc(100% - 8px);
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    display:block;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:65%;
+
+    height:5px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    z-index:10;
+
+}
+
+/* ===================== */
+/* TARJETA ACTIVA */
+/* ===================== */
+
+.active{
+
+    transform:scale(1.15);
+
+    opacity:1;
+
+    filter:none;
+
+    z-index:20;
+
+    box-shadow:
+        0 0 20px rgba(0,229,255,.25),
+        0 0 50px rgba(111,0,255,.25);
+
+}
+
+.active::before{
+
+    background:linear-gradient(
+        90deg,
+        #00E5FF,
+        #6F00FF
+    );
+
+    box-shadow:0 0 12px rgba(0,229,255,.55);
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===================== */
+/* OVERLAY */
+/* ===================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:4px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:18px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+
+}
+
+.overlay h3{
+
+    color:#fff;
+
+    font-size:1rem;
+
+    margin-bottom:5px;
+
+}
+
+.overlay span{
+
+    color:#00E5FF;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media(max-width:768px){
+
+.track{
+
+    padding:0 calc(50vw - 72px);
+
+}
+
+.card{
+
+    width:145px;
+
+}
+
+.active{
+
+    transform:scale(1.08);
+
+}
+
+}

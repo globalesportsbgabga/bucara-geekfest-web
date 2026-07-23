@@ -1,0 +1,225 @@
+.backdrop{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    z-index:9999;
+
+}
+
+/* Fondo con la misma imagen */
+
+.background{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    filter:blur(35px);
+
+    transform:scale(1.15);
+
+    opacity:.35;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.72);
+
+    backdrop-filter:blur(4px);
+
+}
+
+.image{
+
+    position:relative;
+
+    z-index:5;
+
+    max-height:84vh;
+
+    max-width:92vw;
+
+    border-radius:22px;
+
+    object-fit:contain;
+
+    animation:zoom .35s;
+
+    box-shadow:
+
+        0 0 35px rgba(0,229,255,.18);
+
+}
+
+.info{
+
+    position:relative;
+
+    z-index:5;
+
+    margin-top:24px;
+
+    text-align:center;
+
+}
+
+.info h2{
+
+    color:white;
+
+    margin-bottom:8px;
+
+}
+
+.info p{
+
+    color:#00E5FF;
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:28px;
+
+    right:32px;
+
+    z-index:10;
+
+    width:54px;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+}
+
+.arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:62px;
+
+    height:62px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    z-index:10;
+
+}
+
+.left{
+
+    left:40px;
+
+}
+
+.right{
+
+    right:40px;
+
+}
+
+.arrow:hover{
+
+    background:#00E5FF;
+
+    color:black;
+
+}
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+
+transform:scale(.92);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.left{
+
+left:12px;
+
+}
+
+.right{
+
+right:12px;
+
+}
+
+.arrow{
+
+width:46px;
+
+height:46px;
+
+}
+
+.image{
+
+max-height:72vh;
+
+}
+
+}

@@ -26,6 +26,8 @@ import Experience from "./sections/Experience/Experience";
 
 import Marquee from "./sections/Marquee/Marquee";
 
+import Gallery from "./sections/Gallery/Gallery";
+
 function App() {
   return (
     <div className="app">
@@ -42,6 +44,8 @@ function App() {
 
         <Guests />
 
+        <Gallery />
+
         <Exhibitors />
 
         <BannerCTA />
@@ -49,7 +53,6 @@ function App() {
         <Tournaments />
 
          <Experience />
-
 
         <RegistrationHub />
 
