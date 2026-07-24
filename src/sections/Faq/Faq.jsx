@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./Faq.module.css";
-import Faq from "../../data/faq";
+import faq from "../../data/faq";
 
-function Faq() {
+function FAQ() {
 
     const [active, setActive] = useState(null);
 
