@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./Faq.module.css";
 import faq from "../../data/faq";
 
-function FAQ() {
+function Faq() {
 
     const [active, setActive] = useState(null);
 
