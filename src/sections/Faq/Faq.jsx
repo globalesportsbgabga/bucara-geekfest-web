@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./FAQ.module.css";
+import styles from "./Faq.module.css";
 import faq from "../../data/faq";
 
 function FAQ() {
@@ -95,4 +95,4 @@ function FAQ() {
 
 }
 
-export default FAQ;
+export default Faq;
