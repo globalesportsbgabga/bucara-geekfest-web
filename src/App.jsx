@@ -28,9 +28,13 @@ import Marquee from "./sections/Marquee/Marquee";
 
 import Gallery from "./sections/Gallery/Gallery";
 
+import Analytics from "./components/system/Analytics";
+
 function App() {
   return (
     <div className="app">
+
+      <Analytics />
 
       <Navbar />
 
