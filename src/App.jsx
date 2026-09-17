@@ -1,73 +1,71 @@
+import { useState } from "react";
+
 import "./styles/app.css";
 
 import Navbar from "./components/Navbar";
+import Level2Loader from "./components/Level2Loader/Level2Loader";
 
 import Hero from "./sections/Hero/Hero";
-
 import Guests from "./sections/Guests/Guests";
-
 import Exhibitors from "./sections/Exhibitors/Exhibitors";
-
 import Tournaments from "./sections/Tournaments/Tournaments";
-
 import BannerCTA from "./sections/BannerCTA/BannerCTA";
-
 import RegistrationHub from "./sections/RegistrationHub/RegistrationHub";
-
 import Schedule from "./sections/Schedule/Schedule";
-
 import Sponsors from "./sections/Sponsors/Sponsors";
-
 import Faq from "./sections/Faq/Faq";
-
 import Footer from "./sections/Footer/Footer";
-
 import Experience from "./sections/Experience/Experience";
-
 import Marquee from "./sections/Marquee/Marquee";
-
 
 import Analytics from "./components/system/Analytics";
 
 function App() {
-  return (
-    <div className="app">
+    const [showLoader, setShowLoader] = useState(true);
 
-      <Analytics />
+    return (
+        <div className="app">
 
-      <Navbar />
+            {showLoader && (
+                <Level2Loader
+                    onComplete={() => setShowLoader(false)}
+                />
+            )}
 
-      <main className="main-layout">
+            <Analytics />
 
-        <Hero />
+            <Navbar />
 
-        <Marquee />
+            <main className="main-layout">
 
-        <Sponsors />
+                <Hero />
 
-        <Guests />
+                <Marquee />
 
+                <Sponsors />
 
-        <Exhibitors />
+                <Guests />
 
-        <BannerCTA />
+                <Exhibitors />
 
-        <Tournaments />
+                <BannerCTA />
 
-         <Experience />
+                <Tournaments />
 
-        <RegistrationHub />
+                <Experience />
 
-        <Schedule />
+                <RegistrationHub />
 
-        <Faq />
+                <Schedule />
 
-      </main>
+                <Faq />
 
-      <Footer />
+            </main>
 
-    </div>
-  );
+            <Footer />
+
+        </div>
+    );
 }
 
 export default App;
