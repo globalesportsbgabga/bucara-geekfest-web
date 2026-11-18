@@ -3,7 +3,6 @@ import "./styles/app.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Level2Loader from "./components/Level2Loader/Level2Loader";
 import Navbar from "./components/Navbar";
 
 import Hero from "./sections/Hero/Hero";
@@ -28,8 +27,6 @@ import Analytics from "./components/system/Analytics";
 function HomePage() {
     return (
         <div className="app">
-            {import.meta.env.PROD && <Level2Loader />}
-
             <Analytics />
 
             <Navbar />
