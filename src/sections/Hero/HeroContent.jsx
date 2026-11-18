@@ -1,3 +1,4 @@
+
 import styles from "./HeroContent.module.css";
 
 import HeroInfo from "./HeroInfo";
@@ -10,24 +11,21 @@ import HeroScroll from "./HeroScroll";
 function HeroContent() {
   return (
     <div className={styles.content}>
-
       <span className={styles.badge}>
-        21 · 22 · 23 AGOSTO 2026
+        2 · 3 · 4 ABRIL 2027
       </span>
 
-      <h1>
-        EL EVENTO GEEK
-        <br />
-        <span>MÁS GRANDE</span>
-        <br />
-        DEL NORORIENTE COLOMBIANO
-      </h1>
+      <img
+        src="/assets/hero/logo-lvl2.png"
+        alt="Bucara Geek Fest LVL 2"
+        className={styles.logo}
+      />
 
       <p>
-        Tres días de videojuegos, anime, cosplay,
-        K-Pop, TCG, tecnología, invitados especiales,
-        competencias, experiencias inmersivas y una
-        comunidad que vive la cultura geek como nunca antes.
+        Tres días donde el gaming, el anime, el cosplay y la cultura geek
+        se encuentran. Vive la Copa Cosplay, las competencias grupales de
+        K-Pop, más de 20 torneos, TCG, tecnología, invitados especiales,
+        zona comercial y experiencias para toda la comunidad.
       </p>
 
       <HeroInfo />
@@ -41,7 +39,6 @@ function HeroContent() {
       <HeroBadges />
 
       <HeroScroll />
-
     </div>
   );
 }

@@ -1,70 +1,68 @@
-import { useState } from "react";
 
 import "./styles/app.css";
 
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Level2Loader from "./components/Level2Loader/Level2Loader";
+import Navbar from "./components/Navbar";
 
 import Hero from "./sections/Hero/Hero";
+import Experience from "./sections/Experience/Experience";
 import Guests from "./sections/Guests/Guests";
-import Exhibitors from "./sections/Exhibitors/Exhibitors";
-import Tournaments from "./sections/Tournaments/Tournaments";
-import BannerCTA from "./sections/BannerCTA/BannerCTA";
-import RegistrationHub from "./sections/RegistrationHub/RegistrationHub";
 import Schedule from "./sections/Schedule/Schedule";
 import Sponsors from "./sections/Sponsors/Sponsors";
 import Faq from "./sections/Faq/Faq";
 import Footer from "./sections/Footer/Footer";
-import Experience from "./sections/Experience/Experience";
 import Marquee from "./sections/Marquee/Marquee";
+
+import RegistrationPage from "./pages/RegistrationPage";
+import CopaCosplayPage from "./pages/CopaCosplayPage";
+import KpopPage from "./pages/KpopPage";
+import TorneosPage from "./pages/TorneosPage";
+import TCGPage from "./pages/TCGPage";
+import ArtistValleyPage from "./pages/ArtistValleyPage";
+import ExhibitorsPage from "./pages/ExhibitorsPage";
 
 import Analytics from "./components/system/Analytics";
 
-function App() {
-    const [showLoader, setShowLoader] = useState(true);
-
+function HomePage() {
     return (
         <div className="app">
-
-            {showLoader && (
-                <Level2Loader
-                    onComplete={() => setShowLoader(false)}
-                />
-            )}
+            {import.meta.env.PROD && <Level2Loader />}
 
             <Analytics />
 
             <Navbar />
 
             <main className="main-layout">
-
                 <Hero />
-
-                <Marquee />
-
-                <Sponsors />
-
                 <Guests />
-
-                <Exhibitors />
-
-                <BannerCTA />
-
-                <Tournaments />
-
-                <Experience />
-
-                <RegistrationHub />
-
+                <Marquee />
                 <Schedule />
-
+                <Sponsors />
+                <Experience />
                 <Faq />
-
             </main>
 
             <Footer />
-
         </div>
+    );
+}
+
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/entradas" element={<RegistrationPage />} />
+                <Route path="/copa-cosplay" element={<CopaCosplayPage />} />
+                <Route path="/kpop" element={<KpopPage />} />
+                <Route path="/torneos" element={<TorneosPage />} />
+                <Route path="/tcg" element={<TCGPage />} />
+                <Route path="/artist-valley" element={<ArtistValleyPage />} />
+                <Route path="/expositores" element={<ExhibitorsPage />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 

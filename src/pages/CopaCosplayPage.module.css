@@ -1,0 +1,462 @@
+
+.page {
+  padding-top: 88px;
+  color: #edf3ff;
+  background: #080d19;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(5, 9, 22, 0.38),
+      rgba(5, 9, 22, 0.78)
+    ),
+    url("/assets/hero/fondo-cosplay.png") center 35% / cover no-repeat;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.heroContent {
+  width: min(900px, 100%);
+}
+
+.eyebrow,
+.sectionLabel {
+  color: #00e5ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 22px 0;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -3px;
+  color: #fff;
+  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 span {
+  color: #ff36c7;
+  text-shadow: 0 0 28px rgba(255, 54, 199, 0.35);
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #c5d0e4;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.eventInfo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.eventInfo span {
+  padding: 11px 17px;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 6px;
+  background: rgba(0, 229, 255, 0.07);
+  color: #eafaff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* INTRODUCCIÓN */
+
+.introduction,
+.categories,
+.judges {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+  padding: 85px 0;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.introduction h2,
+.sectionHeading h2 {
+  margin: 17px 0;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 850;
+}
+
+.introduction > p,
+.sectionHeading > p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #aebbd1;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* REQUISITO VIP */
+
+.vipNotice {
+  max-width: 850px;
+  margin: 38px auto 0;
+  padding: 25px 30px;
+  text-align: left;
+  border: 1px solid rgba(255, 54, 199, 0.3);
+  border-left: 4px solid #ff36c7;
+  border-radius: 10px;
+  background: rgba(255, 54, 199, 0.06);
+}
+
+.vipNotice strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff72d8;
+  font-size: 1rem;
+}
+
+.vipNotice p {
+  margin: 0;
+  color: #d1d9e8;
+  line-height: 1.8;
+  font-size: 0.94rem;
+}
+
+/* CATEGORÍAS */
+
+.categories {
+  padding-top: 35px;
+}
+
+.sectionHeading {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.categoryCard {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 440px;
+  padding: 28px 25px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 15px;
+  background: #0c1221;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.categoryCard::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(5, 9, 22, 0.08) 0%,
+      rgba(5, 9, 22, 0.15) 25%,
+      rgba(5, 9, 22, 0.72) 57%,
+      rgba(5, 9, 22, 0.98) 100%
+    ),
+    var(--category-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  transition: transform 0.55s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 54, 199, 0.75);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.categoryCard:hover::before {
+  transform: scale(1.06);
+}
+
+.categoryNumber {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff36c7, #9c35ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 950;
+  box-shadow: 0 5px 20px rgba(255, 54, 199, 0.3);
+}
+
+.categoryContent {
+  position: relative;
+  z-index: 1;
+}
+
+.categoryCard h3 {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.categoryCard > .categoryContent > p {
+  min-height: 90px;
+  margin: 0;
+  color: #edf3ff;
+  line-height: 1.7;
+  font-size: 0.94rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.categoryActions {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 22px;
+}
+
+.primaryButton,
+.secondaryButton,
+.disabledButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45px;
+  padding: 11px 14px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.7px;
+}
+
+.primaryButton {
+  color: #07111d;
+  background: linear-gradient(90deg, #00e5ff, #00b8ff);
+}
+
+.secondaryButton {
+  color: #ff8be0;
+  border: 1px solid rgba(255, 54, 199, 0.5);
+  background: rgba(255, 54, 199, 0.12);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  filter: brightness(1.15);
+}
+
+.disabledButton {
+  color: #c2c9d8;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(8, 12, 28, 0.75);
+  cursor: not-allowed;
+}
+
+/* JURADOS OFICIALES */
+
+.judges {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+
+.judges .sectionHeading {
+  margin-bottom: 30px;
+}
+
+.judgesPlaceholder {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: 15px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(0, 229, 255, 0.1),
+      transparent 65%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(0, 229, 255, 0.04),
+      rgba(255, 54, 199, 0.08)
+    );
+}
+
+.judgeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  border: 1px solid rgba(255, 54, 199, 0.5);
+  border-radius: 50%;
+  background: rgba(255, 54, 199, 0.1);
+  color: #ff72d8;
+  font-size: 2rem;
+}
+
+.judgesPlaceholder h3 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.judgesPlaceholder p {
+  max-width: 600px;
+  margin: 0 auto 22px;
+  color: #b9c4d9;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.judgesStatus {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: 25px;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.06);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+/* CIERRE */
+
+.closing {
+  padding: 75px 22px;
+  text-align: center;
+  background:
+    linear-gradient(
+      110deg,
+      rgba(10, 15, 38, 0.88),
+      rgba(35, 12, 48, 0.82)
+    ),
+    url("/assets/hero/fondo-cosplay.png") center/cover no-repeat;
+  border-top: 1px solid rgba(255, 54, 199, 0.2);
+}
+
+.closing h2 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+}
+
+.closing p {
+  max-width: 650px;
+  margin: 0 auto 22px;
+  color: #b8c4d9;
+  line-height: 1.8;
+}
+
+.closing span {
+  color: #00e5ff;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .categoryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .categoryCard {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-top: 78px;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 65px 20px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .subtitle {
+    font-size: 0.96rem;
+  }
+
+  .eventInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction,
+  .categories,
+  .judges {
+    width: 88%;
+    padding: 60px 0;
+  }
+
+  .vipNotice {
+    padding: 20px;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryCard {
+    min-height: 420px;
+  }
+
+  .categoryCard > .categoryContent > p {
+    min-height: auto;
+  }
+
+  .judgesPlaceholder {
+    padding: 35px 22px;
+  }
+
+  .closing {
+    padding: 60px 22px;
+  }
+}

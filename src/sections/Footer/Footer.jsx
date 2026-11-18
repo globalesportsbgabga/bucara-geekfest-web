@@ -1,103 +1,80 @@
+
 import styles from "./Footer.module.css";
 
 import footer from "../../data/footer";
 
 function Footer() {
+    return (
+        <footer className={styles.footer}>
+            <div className={styles.container}>
+                <div className={styles.top}>
+                    <div className={styles.brand}>
+                        <img
+                            src="/assets/hero/logo-lvl2%20-%20copia.png"
+                            alt="Bucara GeekFest LVL 2"
+                        />
 
-  return (
+                        <h2>
+                            {footer.brand}
+                        </h2>
 
-    <footer className={styles.footer}>
+                        <p>
+                            {footer.slogan}
+                        </p>
+                    </div>
 
-      <div className={styles.container}>
+                    <div className={styles.info}>
+                        <h3>
+                            Evento
+                        </h3>
 
-        <div className={styles.top}>
+                        <p>
+                            {footer.dates}
+                        </p>
 
-          <div className={styles.brand}>
+                        <p>
+                            {footer.location}
+                        </p>
+                    </div>
 
-            <img
-              src="/assets/logo/logo.png"
-              alt="Bucara GeekFest"
-            />
+                    <div className={styles.contact}>
+                        <h3>
+                            Contacto
+                        </h3>
 
-            <h2>
-              {footer.brand}
-            </h2>
+                        <p>
+                            {footer.email}
+                        </p>
 
-            <p>
-              {footer.slogan}
-            </p>
+                        <p>
+                            {footer.phone}
+                        </p>
+                    </div>
 
-          </div>
+                    <div className={styles.social}>
+                        <h3>
+                            Síguenos
+                        </h3>
 
-          <div className={styles.info}>
+                        {footer.social.map((item) => (
+                            <a
+                                key={item.id}
+                                href={item.url}
+                            >
+                                {item.name}
+                            </a>
+                        ))}
+                    </div>
+                </div>
 
-            <h3>
-              Evento
-            </h3>
-
-            <p>
-              {footer.dates}
-            </p>
-
-            <p>
-              {footer.location}
-            </p>
-
-          </div>
-
-          <div className={styles.contact}>
-
-            <h3>
-              Contacto
-            </h3>
-
-            <p>
-              {footer.email}
-            </p>
-
-            <p>
-              {footer.phone}
-            </p>
-
-          </div>
-
-          <div className={styles.social}>
-
-            <h3>
-              Síguenos
-            </h3>
-
-            {footer.social.map((item) => (
-
-              <a
-                key={item.id}
-                href={item.url}
-              >
-                {item.name}
-              </a>
-
-            ))}
-
-          </div>
-
-        </div>
-
-        <div className={styles.bottom}>
-
-          <p>
-
-            {footer.copyright}
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </footer>
-
-  );
-
+                <div className={styles.bottom}>
+                    <p>
+                        {footer.copyright}
+                    </p>
+                </div>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

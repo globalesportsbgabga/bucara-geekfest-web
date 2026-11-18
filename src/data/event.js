@@ -1,8 +1,9 @@
+
 const event = {
 
-    name: "Bucara GeekFest lvl 1",
+    name: "Bucara GeekFest LVL 2",
 
-    edition: "2026",
+    edition: "2027",
 
     slogan: "El evento geek más grande de Santander",
 
@@ -10,17 +11,17 @@ const event = {
 
     country: "Colombia",
 
-    startDate: "2026-08-21",
+    startDate: "2027-04-02",
 
-    endDate: "2026-08-23",
+    endDate: "2027-04-04",
 
-    schedule: "9:00 AM - 8:00 PM",
+    schedule: "10:00 AM - 8:00 PM",
 
-    attendees: 5000,
+    attendees: 10000,
 
-    exhibitors: 100,
+    exhibitors: "100+",
 
-    experiences: 30,
+    experiences: "Muchas",
 
     days: 3,
 

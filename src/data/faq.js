@@ -1,45 +1,58 @@
+
 const faq = [
   {
     id: 1,
-    question: "¿Cuándo se realizará el Bucara GeekFest?",
+    question: "¿Cuándo se realizará el Bucara GeekFest LVL 2?",
     answer:
-      "El evento se realizará del 21 al 23 de agosto de 2026 a partir de las 9:00 a.m.",
+      "El evento se realizará los días 2, 3 y 4 de abril de 2027. Abriremos nuestras puertas desde las 10:00 a. m. en Neomundo, Bucaramanga.",
   },
   {
     id: 2,
     question: "¿Dónde será el evento?",
     answer:
-      "El Bucara GeekFest se realizará en Neomundo, Bucaramanga.",
+      "Bucara GeekFest LVL 2 se realizará en Neomundo, Bucaramanga, en los salones Barichara y Pienta.",
   },
   {
     id: 3,
-    question: "¿Que beneficios tiene el VIP?",
+    question: "¿Cuánto cuesta la entrada general?",
     answer:
-      "El pase VIP incluye participación de todas las actividades, torneos, sorteos del día, también puedes adquirir para los tres días del evento.",
-  },
-  {
-    id: 3,
-    question: "¿Como consigo el VIP?",
-    answer:
-      "Puedes conseguirlo de forma virtual dando click al boton que dice (quiero pase vip) o en los puntos autorizados en la ciudad de Bucaramanga.",
+      "La entrada general tiene un valor de $10.000 por día en preventa y $15.000 por día en taquilla.",
   },
   {
     id: 4,
-    question: "¿Habrá concurso de cosplay?",
+    question: "¿Cuánto cuesta el pase VIP?",
     answer:
-      "Sí. Tendremos copa Cosplay, donde los participantes podrán mostrar sus habilidades y creatividad en el escenario. Habrá premios para los mejores Cosplays y la oportunidad de ganar reconocimiento en la comunidad.  ",
+      "El pase VIP de un día cuesta $30.000 en preventa y $35.000 en taquilla. El pase VIP para los tres días cuesta $75.000 en preventa y $105.000 en taquilla.",
   },
   {
     id: 5,
-    question: "¿Dónde puedo comprar las entradas?",
+    question: "¿Qué beneficios tiene el pase VIP?",
     answer:
-      "La entrada es libre para todo el publico.",
+      "El pase VIP ofrece una modalidad especial de acceso al evento. Consulta las condiciones y beneficios correspondientes al momento de adquirirlo.",
   },
   {
     id: 6,
-    question: "¿Puedo registrarme gratis a algun torneo o actividad?",
+    question: "¿Cómo consigo el pase VIP?",
     answer:
-      "Claro, puedes registrarte gratis para participar de un torneo durante todo el evento, o actividad, elige sabiamente.",
+      "Puedes adquirirlo de forma virtual mediante el botón «Quiero Pase VIP» de nuestra página web o en los puntos autorizados de Bucaramanga.",
+  },
+  {
+    id: 7,
+    question: "¿Habrá concurso de cosplay?",
+    answer:
+      "¡Sí! Tendremos nuestra Copa Cosplay, donde los participantes podrán mostrar sus habilidades, creatividad y talento en el escenario. Habrá premios y reconocimiento para los participantes destacados.",
+  },
+  {
+    id: 8,
+    question: "¿Dónde puedo comprar las entradas?",
+    answer:
+      "Podrás adquirir tus entradas en preventa a través de nuestros canales oficiales y también en taquilla durante los días del evento.",
+  },
+  {
+    id: 9,
+    question: "¿Puedo registrarme gratis a algún torneo o actividad?",
+    answer:
+      "¡Claro! Podrás registrarte gratuitamente para participar en los torneos y actividades que tengan inscripción disponible. Consulta las condiciones de cada competencia.",
   },
 ];
 

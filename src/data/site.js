@@ -1,24 +1,25 @@
+
 const site = {
-  eventName: "Bucara GeekFest",
-  edition: "2026",
+  eventName: "Bucara GeekFest LVL 2",
+  edition: "2027",
   city: "Bucaramanga",
   venue: "Neomundo",
 
   hero: {
-    badge: "🚀 2026 · Bucaramanga · Neomundo",
+    badge: "2 · 3 · 4 ABRIL 2027 · BUCARAMANGA · NEOMUNDO",
 
     title: "La experiencia geek más grande",
 
     highlight: "del Nororiente Colombiano",
 
     description:
-      "Videojuegos, cosplay, anime, K-Pop, TCG, invitados especiales, tecnología, torneos y una experiencia diseñada para toda la comunidad geek.",
+      "Más de 10.000 asistentes, más de 100 expositores, videojuegos, cosplay, anime, K-Pop, TCG, invitados especiales, tecnología, torneos y muchas experiencias para toda la comunidad geek.",
 
     primaryButton: "Comprar Entradas",
 
     secondaryButton: "Explorar Evento",
 
-    smallText: "26 • 27 • 28 Septiembre 2026"
+    smallText: "2 • 3 • 4 Abril 2027"
   }
 };
 

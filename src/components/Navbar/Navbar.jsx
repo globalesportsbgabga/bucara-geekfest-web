@@ -1,169 +1,109 @@
+
 import { useState } from "react";
 import styles from "./Navbar.module.css";
-import links from "../../data/links";
-import Button from "../Button/Button";
 
 function Navbar() {
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     const closeMenu = () => {
         setMenuOpen(false);
     };
 
+    const navigation = [
+        { label: "Inicio", href: "/#inicio" },
+        { label: "Experiencia", href: "/#experience" },
+        { label: "Copa Cosplay", href: "/copa-cosplay" },
+        { label: "K-Pop", href: "/kpop" },
+        { label: "Torneos", href: "/torneos" },
+        { label: "TCG", href: "/tcg" },
+        { label: "Artist Valley", href: "/artist-valley" },
+        { label: "Expositores", href: "/expositores" },
+        { label: "Invitados", href: "/#invitados" },
+        { label: "Agenda", href: "/#agenda" },
+        { label: "FAQ", href: "/#faq" },
+    ];
+
     return (
-
         <header className={styles.navbar}>
-
             <div className={styles.container}>
-
                 <a
-                    href="#inicio"
+                    href="/#inicio"
                     className={styles.logo}
                     onClick={closeMenu}
                 >
                     <img
-                        src="/assets/logo/logo.png"
-                        alt="Bucara GeekFest"
+                        src="/assets/hero/logo-lvl2%20-%20copia.png"
+                        alt="Bucara GeekFest LVL 2"
                     />
                 </a>
 
-                {/* =====================
-                    MENÚ ESCRITORIO
-                ====================== */}
-
+                {/* MENÚ ESCRITORIO */}
                 <nav className={styles.menu}>
-
-                    <a href="#inicio">Inicio</a>
-
-                    <a href="#experience">Experiencia</a>
-
-                    <a href="#invitados">Invitados</a>
-
-                    <a href="#zona-comercial">Expositores</a>
-
-                    <a href="#torneos">Torneos</a>
-
-                    <a href="#agenda">Agenda</a>
-
-                    <a href="#patrocinadores">Sponsors</a>
-
-                    <a href="#faq">FAQ</a>
-
+                    {navigation.map((item) => (
+                        <a key={item.label} href={item.href}>
+                            {item.label}
+                        </a>
+                    ))}
                 </nav>
 
                 <div className={styles.actions}>
-
-                    <Button
-                        href={links.exhibitor}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="ghost"
+                    <a
+                        href="/entradas"
+                        className={styles.ticketsLink}
                     >
-                        Quiero ser Expositor
-                    </Button>
-
-                    <Button
-                        href={links.vip}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="secondary"
-                    >
-                        Quiero Pase VIP
-                    </Button>
-
-                    
-
+                        ENTRADAS
+                    </a>
                 </div>
 
-                {/* =====================
-                    BOTÓN HAMBURGUESA
-                ====================== */}
-
+                {/* BOTÓN HAMBURGUESA */}
                 <button
+                    type="button"
                     className={styles.hamburger}
                     onClick={() => setMenuOpen(!menuOpen)}
-                    aria-label="Abrir menú"
+                    aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+                    aria-expanded={menuOpen}
                 >
-
                     <span></span>
-
                     <span></span>
-
                     <span></span>
-
                 </button>
-
             </div>
 
-            {/* =====================
-                MENÚ MÓVIL
-            ====================== */}
-
+            {/* MENÚ MÓVIL */}
             <div
                 className={`${styles.mobileMenu} ${menuOpen ? styles.show : ""}`}
             >
-
                 <button
+                    type="button"
                     className={styles.close}
                     onClick={closeMenu}
+                    aria-label="Cerrar menú"
                 >
                     ✕
                 </button>
 
-                <a href="#inicio" onClick={closeMenu}>Inicio</a>
-
-                <a href="#experience" onClick={closeMenu}>Experiencia</a>
-
-                <a href="#invitados" onClick={closeMenu}>Invitados</a>
-
-                <a href="#zona-comercial" onClick={closeMenu}>Expositores</a>
-
-                <a href="#torneos" onClick={closeMenu}>Torneos</a>
-
-                <a href="#agenda" onClick={closeMenu}>Agenda</a>
-
-                <a href="#patrocinadores" onClick={closeMenu}>Sponsors</a>
-
-                <a href="#faq" onClick={closeMenu}>FAQ</a>
+                {navigation.map((item) => (
+                    <a
+                        key={item.label}
+                        href={item.href}
+                        onClick={closeMenu}
+                    >
+                        {item.label}
+                    </a>
+                ))}
 
                 <div className={styles.mobileButtons}>
-
-                    <Button
-                        href={links.tickets}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="primary"
+                    <a
+                        href="/entradas"
+                        className={styles.mobileTicketsLink}
+                        onClick={closeMenu}
                     >
-                        Comprar Tickets
-                    </Button>
-
-                    <Button
-                        href={links.vip}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="secondary"
-                    >
-                        Pase VIP
-                    </Button>
-
-                    <Button
-                        href={links.exhibitor}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        variant="ghost"
-                    >
-                        Quiero ser Expositor
-                    </Button>
-
+                        ENTRADAS
+                    </a>
                 </div>
-
             </div>
-
         </header>
-
     );
-
 }
 
 export default Navbar;

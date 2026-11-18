@@ -1,21 +1,22 @@
+
 const schedule = [
   {
-    day: "21 AGO",
-    title: "Gran Apertura",
+    day: "02 ABR",
+    title: "Inauguración",
     description:
-      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   },
   {
-    day: "22 AGO",
-    title: "Día de Competencias",
+    day: "03 ABR",
+    title: "Día de actividades",
     description:
-      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   },
   {
-    day: "23 AGO",
-    title: "Finales y Clausura",
+    day: "04 ABR",
+    title: "Finales y clausura",
     description:
-      "MUY PRONTO anunciaremos la programación completa del evento, incluyendo horarios de conferencias, actividades y torneos. ¡Mantente atento a nuestras redes sociales y página web para más detalles!"
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   }
 ];
 

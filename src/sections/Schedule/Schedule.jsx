@@ -1,29 +1,31 @@
+
 import styles from "./Schedule.module.css";
 
 const schedule = [
   {
-    day: "21 AGO",
+    day: "02 ABR",
     title: "Inauguración",
-    description: "Apertura oficial, escenario principal y primeras actividades."
+    description:
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   },
   {
-    day: "22 AGO",
-    title: "Competencias",
-    description: "Cosplay, videojuegos, TCG, K-Pop y actividades especiales."
+    day: "03 ABR",
+    title: "Día de actividades",
+    description:
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   },
   {
-    day: "23 AGO",
-    title: "Gran Final",
-    description: "Finales, premiaciones y cierre oficial del Bucara GeekFest."
+    day: "04 ABR",
+    title: "Finales y clausura",
+    description:
+      "Programación y actividades próximamente. Muy pronto anunciaremos el cronograma oficial de Bucara GeekFest LVL 2."
   }
 ];
 
 function Schedule() {
   return (
     <section className={styles.schedule} id="agenda">
-
       <div className={styles.container}>
-
         <span className={styles.badge}>
           Agenda
         </span>
@@ -31,39 +33,27 @@ function Schedule() {
         <h2>Cronograma del Evento</h2>
 
         <p>
-          Tres días llenos de cultura geek, videojuegos,
-          anime, cosplay, tecnología y entretenimiento.
+          Tres días de Bucara GeekFest LVL 2.
+          La programación oficial estará disponible próximamente.
         </p>
 
         <div className={styles.timeline}>
-
           {schedule.map((item, index) => (
-
             <article
               key={index}
               className={styles.card}
             >
-
               <div className={styles.day}>
                 {item.day}
               </div>
 
-              <h3>
-                {item.title}
-              </h3>
+              <h3>{item.title}</h3>
 
-              <p>
-                {item.description}
-              </p>
-
+              <p>{item.description}</p>
             </article>
-
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

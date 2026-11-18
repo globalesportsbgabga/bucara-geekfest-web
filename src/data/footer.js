@@ -1,17 +1,18 @@
+
 const footer = {
-  brand: "Bucara GeekFest Lv1",
+  brand: "Bucara GeekFest LVL 2",
 
   slogan: "La experiencia geek más épica de Bucaramanga.",
 
-  location: "Neomundo · Bucaramanga",
+  location: "Neomundo · Salones Barichara y Pienta · Bucaramanga",
 
-  dates: "21 · 22 · 23 de Agosto",
+  dates: "2 · 3 · 4 de Abril de 2027",
 
   email: "globalesportsbga@gmail.com",
 
   phone: "+57 3058144929",
 
-  copyright: "© 2026 GlobaleSportsbga. Todos los derechos reservados.",
+  copyright: "© 2027 Global E-Sports. Todos los derechos reservados.",
 
   social: [
     {

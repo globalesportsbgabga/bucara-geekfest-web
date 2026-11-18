@@ -1,59 +1,43 @@
+
 import styles from "./BannerCTA.module.css";
 import links from "../../data/links";
 
 function BannerCTA() {
+  return (
+    <section className={styles.banner}>
+      <div className={styles.overlay}></div>
 
-    return (
+      <div className={styles.content}>
+        <span className={styles.badge}>
+          ARTIST VALLEY · 2027
+        </span>
 
-        <section className={styles.banner}>
+        <h2>
+          EL TALENTO CREATIVO
+          <br />
+          TIENE SU PROPIO
+          <br />
+          ESCENARIO
+        </h2>
 
-            <div className={styles.overlay}></div>
+        <p>
+          Un espacio para ilustradores, artistas, dibujantes,
+          diseñadores y creadores independientes. Descubre
+          propuestas originales y celebra la creatividad
+          en Bucara GeekFest LVL 2.
+        </p>
 
-            <div className={styles.content}>
-
-                <span className={styles.badge}>
-                    TORNEOS OFICIALES 2026
-                </span>
-
-                <h2>
-                    ¿ESTÁS LISTO PARA
-                    <br />
-                    DEMOSTRAR TU NIVEL?
-                </h2>
-
-                <p>
-
-                    Más de 10 torneos,
-                    premios,
-                    invitados especiales
-                    y cientos de jugadores
-                    competirán durante
-                    Bucara GeekFest.
-
-                </p>
-
-                <a
-
-                    href={links.tournaments}
-
-                    target="_blank"
-
-                    rel="noopener noreferrer"
-
-                    className={styles.button}
-
-                >
-
-                    🎮 INSCRIBIRME AHORA
-
-                </a>
-
-            </div>
-
-        </section>
-
-    );
-
+        <a
+          href={links.exhibitor}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.button}
+        >
+          🎨 QUIERO PARTICIPAR EN ARTIST VALLEY
+        </a>
+      </div>
+    </section>
+  );
 }
 
 export default BannerCTA;

@@ -1,33 +1,26 @@
+
 import styles from "./HeroButtons.module.css";
 
 function HeroButtons() {
+  return (
+    <div className={styles.buttons}>
+      <a
+        href="/entradas"
+        className={styles.primary}
+      >
+        OBTÉN TU VIP
+      </a>
 
-    return (
-
-        <div className={styles.buttons}>
-
-            <a
-                href="https://forms.gle/DiJSWe9DeNJE4Yxq7"
-                target="_blank"
-                rel="noreferrer"
-                className={styles.secondary}
-            >
-                SER VIP
-            </a>
-
-            <a
-                href="https://wa.me/573058144929"
-                target="_blank"
-                rel="noreferrer"
-                className={styles.secondary}
-            >
-                WhatsApp
-            </a>
-
-        </div>
-
-    );
-
+      <a
+        href="https://wa.me/573058144929"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.secondary}
+      >
+        CONTÁCTANOS POR WHATSAPP
+      </a>
+    </div>
+  );
 }
 
 export default HeroButtons;

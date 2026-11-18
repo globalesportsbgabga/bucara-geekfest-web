@@ -1,0 +1,448 @@
+
+.page {
+  padding-top: 88px;
+  color: #edf3ff;
+  background: #080d19;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  text-align: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 20, 0.76),
+      rgba(13, 5, 26, 0.48)
+    ),
+    url("/assets/hero/fondo-kpop.png") center 42% / cover no-repeat;
+  border-bottom: 1px solid rgba(255, 54, 199, 0.25);
+}
+
+.heroContent {
+  width: min(900px, 100%);
+}
+
+.eyebrow,
+.sectionLabel {
+  color: #ff62d5;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 22px 0;
+  color: #fff;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-weight: 950;
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #ff48ca;
+  text-shadow: 0 0 28px rgba(255, 54, 199, 0.35);
+}
+
+.heroContent > p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #c5d0e4;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.eventInfo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.eventInfo span {
+  padding: 11px 17px;
+  border: 1px solid rgba(255, 54, 199, 0.4);
+  border-radius: 6px;
+  background: rgba(255, 54, 199, 0.07);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* INTRODUCCIÓN */
+
+.introduction,
+.organizer,
+.information {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.introduction {
+  text-align: center;
+}
+
+.introduction h2,
+.sectionHeading h2 {
+  margin: 18px 0;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 850;
+}
+
+.introduction > p,
+.sectionHeading > p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #aebbd1;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* COMUNIDAD ORGANIZADORA K-SOUL */
+
+.organizer {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.organizerCard {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  max-width: 950px;
+  margin: 35px auto 0;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid rgba(255, 98, 213, 0.3);
+  border-radius: 14px;
+  background: linear-gradient(120deg, #19112c, #10182c);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.organizerLogo {
+  flex: 0 0 300px;
+  width: 300px;
+  min-height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.organizerLogo img {
+  display: block;
+  width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.organizerInfo {
+  flex: 1;
+}
+
+.organizerTag {
+  color: #00e5ff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.organizerInfo h2 {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.organizerInfo p {
+  margin: 0;
+  color: #bac6da;
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+
+/* COMPETENCIAS */
+
+.information {
+  padding-top: 35px;
+}
+
+.sectionHeading {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.competitionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.competitionCard {
+  position: relative;
+  min-height: 260px;
+  padding: 35px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 54, 199, 0.3);
+  border-radius: 13px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 54, 199, 0.12),
+      transparent 55%
+    ),
+    linear-gradient(130deg, #17102b, #10182c);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.competitionCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 98, 213, 0.7);
+}
+
+.competitionNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 17px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff48ca, #873bff);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 950;
+}
+
+.competitionCard h3 {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.competitionCard p {
+  margin: 0 0 22px;
+  color: #bac6da;
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+.competitionStatus {
+  display: inline-block;
+  padding: 8px 13px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 20px;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.06);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+/* PARTICIPACIÓN */
+
+.actionCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 35px;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 13px;
+  background: linear-gradient(120deg, #101b30, #17102a);
+}
+
+.actionCard > div:first-child {
+  flex: 1;
+}
+
+.comingSoon {
+  color: #00e5ff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.actionCard h3 {
+  margin: 13px 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.actionCard p {
+  max-width: 580px;
+  margin: 0;
+  color: #aebbd1;
+  line-height: 1.8;
+}
+
+.actions {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryButton,
+.secondaryButton,
+.disabledButton {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.6px;
+}
+
+.primaryButton {
+  color: #07111d;
+  background: linear-gradient(90deg, #00e5ff, #00b8ff);
+}
+
+.secondaryButton {
+  color: #ff8be0;
+  border: 1px solid rgba(255, 54, 199, 0.5);
+  background: rgba(255, 54, 199, 0.07);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  filter: brightness(1.15);
+}
+
+.disabledButton {
+  color: #8290a8;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.035);
+  cursor: not-allowed;
+}
+
+/* CIERRE */
+
+.closing {
+  padding: 75px 22px;
+  text-align: center;
+  background: linear-gradient(110deg, #17102b, #11172c);
+  border-top: 1px solid rgba(255, 54, 199, 0.2);
+}
+
+.closing h2 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+}
+
+.closing p {
+  max-width: 650px;
+  margin: 0 auto 22px;
+  color: #b8c4d9;
+  line-height: 1.8;
+}
+
+.closing > span {
+  color: #ff62d5;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .organizerCard {
+    gap: 25px;
+  }
+
+  .organizerLogo {
+    flex-basis: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 78px;
+  }
+
+  .hero {
+    min-height: 390px;
+    padding: 65px 20px;
+    background-position: center 42%;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .heroContent > p {
+    font-size: 0.96rem;
+  }
+
+  .introduction,
+  .organizer,
+  .information {
+    width: 88%;
+    padding: 60px 0;
+  }
+
+  .organizerCard {
+    flex-direction: column;
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .organizerLogo {
+    flex: none;
+    width: min(100%, 340px);
+    min-height: 170px;
+  }
+
+  .organizerLogo img {
+    max-height: 160px;
+  }
+
+  .competitionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .competitionCard {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .actionCard {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 25px 20px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .closing {
+    padding: 60px 22px;
+  }
+}

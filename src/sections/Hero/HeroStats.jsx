@@ -1,13 +1,14 @@
+
 import styles from "./HeroStats.module.css";
 
 const stats = [
   {
-    number: "+5.000",
-    label: "Visitantes",
+    number: "+15.000",
+    label: "Asistentes proyectados",
     icon: "👥",
   },
   {
-    number: "+50",
+    number: "+100",
     label: "Expositores",
     icon: "🏪",
   },
@@ -17,23 +18,20 @@ const stats = [
     icon: "🏆",
   },
   {
-    number: "3",
-    label: "Días",
-    icon: "📅",
+    number: "3 días",
+    label: "De cultura geek",
+    icon: "🎮",
   },
 ];
 
 function HeroStats() {
   return (
     <div className={styles.stats}>
-
-      {stats.map((stat, index) => (
-
+      {stats.map((stat) => (
         <div
-          key={index}
+          key={stat.label}
           className={styles.card}
         >
-
           <span className={styles.icon}>
             {stat.icon}
           </span>
@@ -45,11 +43,8 @@ function HeroStats() {
           <span className={styles.label}>
             {stat.label}
           </span>
-
         </div>
-
       ))}
-
     </div>
   );
 }

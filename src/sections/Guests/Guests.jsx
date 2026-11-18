@@ -1,57 +1,56 @@
+
 import styles from "./Guests.module.css";
-
-import guests from "../../data/guests";
-
 import useReveal from "../../hooks/useReveal";
 
-import GuestCard from "./GuestCard";
-
 function Guests() {
-
     const { ref, visible } = useReveal();
 
     return (
-
         <section
             id="invitados"
             ref={ref}
             className={`${styles.guests} ${visible ? styles.visible : ""}`}
         >
-
             <div className={styles.container}>
 
                 <span className={styles.badge}>
-                    Invitados Especiales
+                    Invitados Especiales · LVL 2
                 </span>
 
                 <h2>
-                    Conoce a nuestros invitados
+                    Nuevos talentos están por llegar
                 </h2>
 
                 <p className={styles.description}>
-                    Cosplayers, artistas, creadores de contenido y personalidades
-                    que harán del Bucara GeekFest una experiencia inolvidable.
+                    Estamos preparando una nueva edición llena de sorpresas.
+                    Muy pronto conocerás a los invitados especiales que harán
+                    parte de Bucara GeekFest 2027.
                 </p>
 
-                <div className={styles.grid}>
+                <div className={styles.expectationPanel}>
+                    <div className={styles.spotlight}>
+                        <span className={styles.spotlightIcon}>✦</span>
+                    </div>
 
-                    {guests.map((guest) => (
+                    <span className={styles.comingSoon}>
+                        PRÓXIMAMENTE
+                    </span>
 
-                        <GuestCard
-                            key={guest.id}
-                            guest={guest}
-                        />
+                    <h3>
+                        Los invitados de LVL 2
+                        <br />
+                        se revelarán muy pronto
+                    </h3>
 
-                    ))}
-
+                    <p>
+                        Cosplayers, artistas, creadores de contenido
+                        y grandes talentos están por descubrirse.
+                    </p>
                 </div>
 
             </div>
-
         </section>
-
     );
-
 }
 
 export default Guests;

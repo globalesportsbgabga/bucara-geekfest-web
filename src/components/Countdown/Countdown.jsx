@@ -1,7 +1,10 @@
+
 import { useEffect, useState } from "react";
 import styles from "./Countdown.module.css";
 
-const EVENT_DATE = new Date("2026-08-21T09:00:00");
+// Inicio del Bucara GeekFest LVL 2
+// 2 de abril de 2027, 10:00 a. m. (hora de Colombia)
+const EVENT_DATE = new Date("2027-04-02T10:00:00-05:00");
 
 function Countdown() {
   const calculateTime = () => {
@@ -17,10 +20,21 @@ function Countdown() {
     }
 
     return {
-      days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0"),
-      hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
-      minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, "0"),
-      seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
+      days: String(
+        Math.floor(difference / (1000 * 60 * 60 * 24))
+      ).padStart(2, "0"),
+
+      hours: String(
+        Math.floor((difference / (1000 * 60 * 60)) % 24)
+      ).padStart(2, "0"),
+
+      minutes: String(
+        Math.floor((difference / (1000 * 60)) % 60)
+      ).padStart(2, "0"),
+
+      seconds: String(
+        Math.floor((difference / 1000) % 60)
+      ).padStart(2, "0"),
     };
   };
 
@@ -36,7 +50,6 @@ function Countdown() {
 
   return (
     <div className={styles.countdown}>
-
       <div className={styles.card}>
         <span>{time.days}</span>
         <small>Días</small>
@@ -56,7 +69,6 @@ function Countdown() {
         <span>{time.seconds}</span>
         <small>Segundos</small>
       </div>
-
     </div>
   );
 }
