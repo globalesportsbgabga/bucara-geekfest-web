@@ -27,8 +27,6 @@ import Analytics from "./components/system/Analytics";
 function HomePage() {
     return (
         <div className="app">
-            <Analytics />
-
             <Navbar />
 
             <main className="main-layout">
@@ -49,6 +47,9 @@ function HomePage() {
 function App() {
     return (
         <BrowserRouter>
+            {/* Seguimiento global de todas las páginas */}
+            <Analytics />
+
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/entradas" element={<RegistrationPage />} />
