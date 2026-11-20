@@ -1,9 +1,8 @@
+
 import { useEffect } from "react";
 
 function Analytics() {
-
     useEffect(() => {
-
         // ==========================
         // Google Analytics 4
         // ==========================
@@ -11,7 +10,8 @@ function Analytics() {
         const gaScript = document.createElement("script");
         gaScript.async = true;
         gaScript.src =
-            "https://www.googletagmanager.com/gtag/js?id=G-FT0V7TKDMG";
+            "https://www.googletagmanager.com/gtag/js?id=G-0JSY0XBMCR";
+
         document.head.appendChild(gaScript);
 
         const gaConfig = document.createElement("script");
@@ -19,8 +19,9 @@ function Analytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-FT0V7TKDMG');
+            gtag('config', 'G-0JSY0XBMCR');
         `;
+
         document.head.appendChild(gaConfig);
 
         // ==========================
